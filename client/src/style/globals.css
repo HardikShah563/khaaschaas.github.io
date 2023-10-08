@@ -1,0 +1,125 @@
+/* Variable CSS */
+:root {
+    --background: #F6F5F6;
+    --background-dark: #F4F1ED;
+    /* primary */
+    --primary: #FFFFFF;
+    --primary-light: #d0d0d0;
+    --primary-dark: #7f7f7f;
+    /* secondary */
+    --secondary: #091E42;
+    --secondary-dark: #000000;
+    /* tertiary */
+    --tertiary-1: #DAFFE9;
+    --tertiary-2: #FAE9CF;
+    --tertiary-3: #DBD1FC;
+    --tertiary-4: #fecbcb;
+    --tertiary-dark-1: #188644;
+    --tertiary-dark-2: #FFCC6A;
+    --tertiary-dark-3: #7551DC;
+    --tertiary-dark-4: #ff3939;
+    --tertiary-light-1: #DAFFE9;
+    --tertiary-light-2: #FAE9CF;
+    --tertiary-light-3: #e7e0fc;
+    --tertiary-light-4: #fecbcb;
+    /* form */
+    --success-bg: #DAFFE9;
+    --success-text: #188644;
+    --failure-bg: #fecbcb;
+    --failure-text: #ff3939;
+    
+    --card-white: rgb(241, 238, 238);
+    /* other variables */
+    --v-small-radius: 8px;
+    --small-radius: 10px;
+    --basic-radius: 20px;
+    --large-radius: 30px;
+
+    --thin-border: 0.5px solid var(--secondary-dark);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Black;
+    src: url(../font/Poppins-Black.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Thin;
+    src: url(../font/Poppins-Thin.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: Poppins-Regular;
+    transition: all 200ms ease-in-out;
+}
+
+.page {
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.simple-heading {
+    font-size: 36px;
+}
+
+.simple-sub-heading {
+    font-size: 24px;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+.margin-block-5 {
+    margin-block: 5px;
+}
+
+.margin-block-10 {
+    margin-block: 10px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.txt-ctr {
+    text-align: center;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.cur {
+    cursor: pointer;
+}
+
+@media (max-width: 450px) {
+    .page {
+        padding: 10px;
+    }
+}
+
+/* Scrollbar CSS */
+/* width */
+::-webkit-scrollbar {
+    width: 5px !important;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary-very-dark);
+    border-radius: var(--radius-10);
+}

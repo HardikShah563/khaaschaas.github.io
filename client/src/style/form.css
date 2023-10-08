@@ -1,0 +1,48 @@
+.form {
+    width: 500px;
+    margin: 10vh auto;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding-inline: 10px;
+    border: var(--thin-border);
+    outline: var(--thin-border);
+    border-radius: var(--v-small-radius);
+}
+
+.form-btn {
+    font-size: 18px;
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
+.form-btn:hover {
+    background-color: var(--secondary-dark);
+}
+
+.sign-with {
+    justify-content: space-between;
+}
+
+.blue {
+    color: #0866FF;
+}
+
+.sign-box {
+    width: 30%;
+    padding-block: 10px 5px;
+    text-align: center;
+    border: var(--thin-border);
+    border-radius: var(--small-radius);
+}
+
+@media (max-width: 550px) {
+    .form {
+        width: 95vw;
+    }
+}
