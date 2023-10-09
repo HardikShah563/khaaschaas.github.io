@@ -43,7 +43,7 @@ export default function SignUp() {
         <>
             <div className="page">
                 <div className="form">
-                    <h1 className="simple-heading">Sign Up</h1>
+                    <h1 className="big-heading">REGISTER FOR FREE</h1>
 
                     <div className="margin-top-20">
                         Full Name
@@ -130,9 +130,9 @@ export default function SignUp() {
                     </div>
 
                     <div className="small-text txt-ctr margin-top-20">
-                        Already have an account?
+                        Accidentally landed here?
                         &nbsp;
-                        <span className="bold cur" onClick={() => {navigate("/signup")}}>
+                        <span className="bold cur" onClick={() => {navigate("/signin")}}>
                             Sign In
                         </span>
                     </div>

@@ -45,10 +45,10 @@ export default function SignIn() {
         <>
             <div className="page">
                 <div className="form">
-                    <h1 className="simple-heading">Sign In</h1>
+                    <h1 className="big-heading">WELCOME BACK!</h1>
 
-                    <div className="margin-top-20">
-                        Email
+                    <div className="input-title margin-top-20">
+                        E-mail
                     </div>
                     <input
                         className="input margin-block-5"
@@ -61,7 +61,7 @@ export default function SignIn() {
                         placeholder="Email Address"
                     />
 
-                    <div className="margin-top-20">
+                    <div className="input-title margin-top-20">
                         Password
                     </div>
                     <input

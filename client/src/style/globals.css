@@ -10,12 +10,12 @@
     --secondary: #091E42;
     --secondary-dark: #000000;
     /* tertiary */
-    --tertiary-1: #DAFFE9;
-    --tertiary-2: #FAE9CF;
-    --tertiary-3: #DBD1FC;
-    --tertiary-4: #fecbcb;
+    --tertiary-1: #85ffb6;
+    --tertiary-2: #ffdb8c;
+    --tertiary-3: #bca7ff;
+    --tertiary-4: #ffa6a6;
     --tertiary-dark-1: #188644;
-    --tertiary-dark-2: #FFCC6A;
+    --tertiary-dark-2: #FFD372;
     --tertiary-dark-3: #7551DC;
     --tertiary-dark-4: #ff3939;
     --tertiary-light-1: #DAFFE9;
@@ -36,6 +36,8 @@
     --large-radius: 30px;
 
     --thin-border: 0.5px solid var(--secondary-dark);
+    --norm-border: 1.5px solid var(--secondary-dark);
+    --thic-border: 2.5px solid var(--secondary-dark);
 }
 
 @font-face {
@@ -60,12 +62,26 @@
     transition: all 200ms ease-in-out;
 }
 
-.page {
-    padding: 20px;
+body {
+    background-color: var(--tertiary-dark-2);
 }
 
+.page {
+    padding: 10px;
+}
+
+.page-contents {
+    padding-top: 100px;
+}
+    
 .flex {
     display: flex;
+}
+
+.big-heading {
+    font-size: 56px;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 .simple-heading {
@@ -77,7 +93,7 @@
 }
 
 .small-text {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .margin-block-5 {
@@ -89,7 +105,7 @@
 }
 
 .margin-top-20 {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .txt-ctr {
@@ -102,6 +118,22 @@
 
 .cur {
     cursor: pointer;
+}
+
+#tertiary-1-bg {
+    background-color: var(--tertiary-1);
+}
+
+#tertiary-2-bg {
+    background-color: var(--tertiary-2);
+}
+
+#tertiary-3-bg {
+    background-color: var(--tertiary-3);
+}
+
+#tertiary-4-bg {
+    background-color: var(--tertiary-4);
 }
 
 @media (max-width: 450px) {

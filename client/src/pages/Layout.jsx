@@ -5,9 +5,11 @@ import Footer from "../components/Footer";
 export default function Layout() {
     return (
         <>
-            <Navbar />
-            <Outlet />
-            <Footer />
+            <div className="page">
+                <Navbar />
+                <Outlet />
+                <Footer />
+            </div>
         </>
     );
 };
