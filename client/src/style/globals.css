@@ -13,15 +13,18 @@
     --tertiary-1: #85ffb6;
     --tertiary-2: #ffdb8c;
     --tertiary-3: #bca7ff;
-    --tertiary-4: #ffa6a6;
+    --tertiary-4: #ff8888;
+    --tertiary-5: #ff74ff;
     --tertiary-dark-1: #188644;
     --tertiary-dark-2: #FFD372;
     --tertiary-dark-3: #7551DC;
     --tertiary-dark-4: #ff3939;
+    --tertiary-dark-5: #ff6dff;
     --tertiary-light-1: #DAFFE9;
     --tertiary-light-2: #FAE9CF;
     --tertiary-light-3: #e7e0fc;
     --tertiary-light-4: #fecbcb;
+    --tertiary-light-5: #ffdfff;
     /* form */
     --success-bg: #DAFFE9;
     --success-text: #188644;
@@ -60,22 +63,33 @@
     margin: 0px;
     font-family: Poppins-Regular;
     transition: all 200ms ease-in-out;
+    overflow-x: hidden;
 }
 
 body {
-    background-color: var(--tertiary-dark-2);
+    background-color: var(--tertiary-dark-2) !important;
 }
 
 .page {
-    padding: 10px;
+    background-color: var(--tertiary-dark-2);
 }
 
 .page-contents {
-    padding-top: 100px;
+    padding-block: 100px;
 }
     
 .flex {
     display: flex;
+}
+
+.v-big-heading {
+    width: 70%;
+    margin: 10vh auto;
+    font-size: 140px;
+    line-height: 120px;
+    letter-spacing: 2px;
+    text-align: center;
+    overflow: hidden;
 }
 
 .big-heading {
@@ -136,7 +150,41 @@ body {
     background-color: var(--tertiary-4);
 }
 
-@media (max-width: 450px) {
+#tertiary-light-2-bg {
+    background-color: var(--tertiary-light-2);
+}
+
+#tertiary-light-3-bg {
+    background-color: var(--tertiary-light-3);
+}
+
+@media (max-width: 1000px) {
+    .v-big-heading {
+        font-size: 100px;
+        line-height: 90px;
+    }
+}
+
+@media (max-width: 750px) {
+    .v-big-heading {
+        width: 100%;
+        font-size: 80px;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 550px) {
+    .v-big-heading {
+        font-size: 50px;
+        line-height: 45px;
+        font-weight: 200;
+        letter-spacing: 0px;
+    }
+
+    .big-heading {
+        font-size: 38px;
+    }
+
     .page {
         padding: 10px;
     }
@@ -145,13 +193,13 @@ body {
 /* Scrollbar CSS */
 /* width */
 ::-webkit-scrollbar {
-    width: 5px !important;
-    border-radius: var(--radius);
+    width: 8px !important;
+    border-radius: var(--small);
     overflow: hidden;
 }
 
 /* handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-very-dark);
-    border-radius: var(--radius-10);
+    background: var(--prim);
+    border-radius: var(--basic);
 }

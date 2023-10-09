@@ -8,6 +8,7 @@
 
 nav {
     width: 98vw;
+    padding: 0px 10px;
     margin: auto auto;
     display: flex;
     align-items: center;
@@ -160,11 +161,12 @@ a hr {
     }
 
     .logo {
-        font-size: 20px;
+        width: 200px;
     }
 
     .nav-items {
         align-items: center;
+        padding: 0px;
     }
 
     .nav-links {

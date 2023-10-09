@@ -14,6 +14,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 export default function Navbar() {
     const navigate = useNavigate();
     // setting admin state
+    const [collapseNavbar, setCollapseNavbar] = useState(false);
     const [admin, setAdmin] = React.useState(true);
     const [login, setLogin] = useState(false);
     const [loginInfo, setLoginInfo] = useState({
@@ -21,8 +22,8 @@ export default function Navbar() {
         userLogo: "userLoogo",
     });
 
-    const showNavBar = () => {
-        document.querySelector(".nav-links").classList.toggle("active");
+    const toggleNavbar = () => {
+        setCollapseNavbar(prevState => !prevState);
     }
 
     const shopHoverMetaData = {
@@ -56,7 +57,7 @@ export default function Navbar() {
             <section className="nav">
                 <nav>
                     {/* NAV LINES */}
-                    <div className="nav-lines" onClick={showNavBar}>
+                    <div className="nav-lines" onClick={toggleNavbar}>
                         <div className="Bar"></div>
                         <div className="Bar"></div>
                         <div className="Bar"></div>
@@ -74,7 +75,7 @@ export default function Navbar() {
                         />
                     </div>
 
-                    <div className="nav-links active">
+                    <div className={collapseNavbar? "nav-links active" : "nav-links"}>
                         <div className="dropdown">
                             <div
                                 onClick={() => { navigate("/shop") }}
