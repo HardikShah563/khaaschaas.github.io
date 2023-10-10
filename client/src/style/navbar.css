@@ -91,7 +91,7 @@ nav {
 .dropdown:hover .dropdown-content {
     visibility: visible;
     color: var(--secondary-dark);
-    height: 400px;
+    height: 41vh;
     z-index: 100;
 }
 

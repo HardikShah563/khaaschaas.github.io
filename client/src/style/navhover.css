@@ -1,15 +1,13 @@
-.nav-img-div {
-    display: flex;
-    gap: 20px;
-    background-color: var(--primary);
-    overflow: hidden;
-    border-radius: var(--large-radius);
-    /* inherits: nav-img; */
-}
+.product-img{
+    height: 40vh;
+    border-radius: var(--small-radius);
 
-.nav-img {
-    width: 200px;
-    height: fit-content;
-    background-color: var(--tertiary-3);
-    border: var(--thin-border);
+}
+.grid-item{
+margin-top: 5px;
+margin-bottom: -2px;
+}
+.product-grid{
+    height: 40vh;
+    border-radius: var(--small-radius) !important;
 }

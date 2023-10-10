@@ -3,6 +3,7 @@ import "../style/home.css";
 export default function Home() {
     return (
         <>
+            
             <div className="page-contents">
                 <div className="main">
                     <h1 className="little-big-heading stella txt-ctr">
@@ -16,6 +17,7 @@ export default function Home() {
                     </span>
                 </div>
             </div>
+           
             <div>
                 <img
                     src={
@@ -26,6 +28,7 @@ export default function Home() {
                     className="main-img"
                 />
             </div>
+           
         </>
     );
 };
