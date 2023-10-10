@@ -51,6 +51,7 @@ nav {
     color: var(--white);
     background-color: var(--primary);
     padding: 10px 20px;
+    margin: 5px;
     border-radius: var(--large-radius);
 }
 

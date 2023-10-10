@@ -1,0 +1,19 @@
+.blur-background {
+    position: fixed;
+    z-index: 100;
+    top: 5vh;
+    left: 5vw;
+    width: 100vw;
+    height: 100vh;
+    transition: all 200ms ease-in-out;
+}
+
+.shop-item-info {
+    width: 90vw;
+    height: 90vh;
+    padding: 10px;
+    background-color: var(--primary);
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    border-radius: var(--large-radius);
+}

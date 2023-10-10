@@ -39,6 +39,7 @@
     z-index: 3;
     transform: translateX(2%) translateY(150%);
     transition: all 1s ease-in-out !important;
+    user-select: none;
 }
 
 .shop-item:hover .shop-item-img {
@@ -50,16 +51,18 @@
 }
 
 .shop-item-buttons {
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
     margin-top: 10px;
 }
 
 .view-details {
     padding: 10px 20px;
-    font-size: 24px;
+    font-size: 22px;
     border-radius: var(--large-radius);
     background-color: var(--primary);
     width: fit-content;
+    user-select: none;
 }
 
 .plus {
