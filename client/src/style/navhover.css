@@ -1,13 +1,19 @@
-.product-img{
+.product-img {
     height: 40vh;
     border-radius: var(--small-radius);
 
 }
-.grid-item{
-margin-top: 5px;
-margin-bottom: -2px;
+
+.grid-item {
+    margin-top: 5px;
+    margin-bottom: -2px;
 }
-.product-grid{
+
+.product-grid {
     height: 40vh;
     border-radius: var(--small-radius) !important;
+}
+
+.hover-button {
+    margin-top: 50px;
 }

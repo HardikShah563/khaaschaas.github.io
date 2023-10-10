@@ -9,7 +9,7 @@ import NavHover from "./NavHover";
 // importing icons
 // import { FiChevronDown } from "react-icons/fi";
 import { BiSolidChevronDown, BiUser } from "react-icons/bi";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+import { AiOutlineShoppingCart, AiOutlineInstagram } from "react-icons/ai";
 
 export default function Navbar() {
     const navigate = useNavigate();
@@ -75,7 +75,7 @@ export default function Navbar() {
                         />
                     </div>
 
-                    <div className={collapseNavbar? "nav-links active" : "nav-links"}>
+                    <div className={collapseNavbar ? "nav-links active" : "nav-links"}>
                         <div className="dropdown">
                             <div
                                 onClick={() => { navigate("/shop") }}
@@ -99,13 +99,6 @@ export default function Navbar() {
                             >
                                 Learn
                             </div>
-
-                            <div className="dropdown-content">
-                                <NavHover
-                                    metadata={shopHoverMetaData}
-                                    data={shopItems}
-                                />
-                            </div>
                         </div>
 
                         <div className="dropdown">
@@ -122,12 +115,13 @@ export default function Navbar() {
                         </div>
 
                         <div className="dropdown">
-                            <div
-                                className="nav-div-name login-icon main-btn"
-                                onClick={() => { navigate("/cart") }}
-                            >
-                                <AiOutlineShoppingCart size={30} />
-                            </div>
+                            <a target="_blank" href="https://www.instagram.com/thekhaaschaas/">
+                                <div
+                                    className="nav-div-name login-icon main-btn"
+                                >
+                                    <AiOutlineInstagram size={30} />
+                                </div>
+                            </a>
 
                             {/* <div className="dropdown-content">
                                 <NavHover />

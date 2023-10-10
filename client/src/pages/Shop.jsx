@@ -29,6 +29,34 @@ export default function Shop() {
                     Flavours
                 </div>
 
+                <p className="txt-ctr bobby main-para">
+                    Order at:
+                </p>
+
+                <div className="flex delivery-logos">
+                    <a target="_blank" href="https://www.swiggy.com/menu/731356?source=sharing">
+                        <img
+                            src={
+                                process.env.PUBLIC_URL +
+                                `/images/swiggy.png`
+                            }
+                            alt=""
+                        />
+                    </a>
+
+                    <hr className="vertical-hr" />
+
+                    <a target="_blank" href="https://link.zomato.com/xqzv/rshare?id=473331540c6b9f5a">
+                        <img
+                            src={
+                                process.env.PUBLIC_URL +
+                                `/images/zomato.png`
+                            }
+                            alt=""
+                        />
+                    </a>
+                </div>
+
                 <div className="shop-items">
                     {shopItems.map((el) => (
                         <>

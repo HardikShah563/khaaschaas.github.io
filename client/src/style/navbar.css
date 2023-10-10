@@ -47,11 +47,10 @@ nav {
 
 .nav-div-name {
     display: flex;
+    gap: 5px;
     align-items: center;
-    font-weight: 600;
-    background-color: var(--yellow);
     margin: 10px;
-    border-radius: var(--large-radius);
+    color: var(--secondary-dark);
 }
 
 .login-icon {
@@ -88,7 +87,8 @@ nav {
 .dropdown:hover .dropdown-content {
     visibility: visible;
     color: var(--secondary-dark);
-    height: 41vh;
+    height: 50vh;
+    padding-top: 20px;
     z-index: 100;
 }
 

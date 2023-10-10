@@ -188,6 +188,10 @@
     cursor: pointer;
 }
 
+.chaas-memes {
+    padding: 20px;
+}
+
 #tertiary-1-bg {
     background-color: var(--tertiary-1);
 }

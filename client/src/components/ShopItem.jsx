@@ -84,10 +84,10 @@ export default function ShopItem(props) {
 
             {visibility && (
                 <>
-                    <ShopItemInfo
+                    {/* <ShopItemInfo
                         props={props}
                         toggleVisibility={toggleVisibility}
-                    />
+                    /> */}
                 </>
             )}
         </>
