@@ -79,10 +79,10 @@ export default function Navbar() {
                         <div className="dropdown">
                             <div
                                 onClick={() => { navigate("/shop") }}
-                                className="nav-div-name"
+                                className="nav-div-name main-btn"
                             >
                                 <span>Shop</span>
-                                <BiSolidChevronDown className="drop-down-icon" />
+                                <BiSolidChevronDown className="drop-down-icon" size={20} />
                             </div>
 
                             <div className="dropdown-content">
@@ -95,7 +95,7 @@ export default function Navbar() {
 
                         <div className="dropdown">
                             <div
-                                className="nav-div-name"
+                                className="nav-div-name main-btn"
                             >
                                 Learn
                             </div>
@@ -110,7 +110,7 @@ export default function Navbar() {
 
                         <div className="dropdown">
                             <div
-                                className="nav-div-name login-icon"
+                                className="nav-div-name login-icon main-btn"
                                 onClick={() => { navigate("/signin") }}
                             >
                                 <BiUser size={30} />
@@ -123,7 +123,7 @@ export default function Navbar() {
 
                         <div className="dropdown">
                             <div
-                                className="nav-div-name login-icon"
+                                className="nav-div-name login-icon main-btn"
                                 onClick={() => { navigate("/cart") }}
                             >
                                 <AiOutlineShoppingCart size={30} />

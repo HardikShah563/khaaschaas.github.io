@@ -110,21 +110,28 @@
 .v-big-heading {
     margin: auto auto 5vh auto;
     font-size: 18vw;
+    line-height: 240px;
     text-align: center;
     overflow: hidden;
+    color: var(--yellow);
+    text-shadow: 8px 8px 0px var(--secondary-dark);
+    user-select: none;
 }
 
 .little-big-heading {
     font-size: 10vw;
-    letter-spacing: 5px;
+    line-height: 120px;
     position: relative;
     z-index: 2;
+    overflow: hidden;
+    user-select: none;
 }
 
 .big-heading {
     font-size: 56px;
     letter-spacing: 2px;
     text-align: center;
+    user-select: none;
 }
 
 .main-btn {
@@ -137,6 +144,7 @@
     box-shadow: 4px 4px 0px var(--kulhad);
     border: var(--norm-border);
     border-radius: var(--small-radius);
+    user-select: none;
 }
 
 .main-btn:hover {

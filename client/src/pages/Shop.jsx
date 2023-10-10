@@ -23,9 +23,9 @@ export default function Shop() {
                             `/images/lips.gif`
                         } alt="" />
                     </span>
-                    <span className="smacking">SMACKING</span>
+                    <span className="smacking bobby">SMACKING</span>
                 </div>
-                <div className="v-big-heading">
+                <div className="v-big-heading bobby">
                     Flavours
                 </div>
 
