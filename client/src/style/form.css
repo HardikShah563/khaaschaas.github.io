@@ -1,7 +1,3 @@
-body {
-    background-color: var(--tertiary-light-2) !important;
-}
-
 .form {
     width: 600px;
     margin: 10vh auto;

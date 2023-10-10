@@ -24,10 +24,9 @@ export default function ShopItem(props) {
         <>
             <div
                 className="shop-item text-hover hover2 gradient"
-                id={`${props.backgroundColor}-gradient`}
                 onClick={toggleVisibility}
             >
-                <div className="price-tag">
+                {/* <div className="price-tag">
                     <img
                         src={
                             process.env.PUBLIC_URL +
@@ -36,11 +35,11 @@ export default function ShopItem(props) {
                         className="price-img"
                         alt="price-tag"
                     />
-                </div>
+                </div> */}
 
-                <div className="shop-bg-title">{props.drinkName}</div>
+                {/* <div className="shop-bg-title">{props.drinkName}</div> */}
 
-                <img
+                {/* <img
                     src={
                         process.env.PUBLIC_URL +
                         `/images/${props.drinkURL}.png`
@@ -48,7 +47,29 @@ export default function ShopItem(props) {
                     alt={props.drinkURL}
                     id={props.drinkURL}
                     className="shop-item-img"
-                />
+                /> */}
+
+                <div className="item">
+                    <img
+                        src={
+                            process.env.PUBLIC_URL +
+                            props.drinkStatic
+                        }
+                        alt={props.drinkName}
+                        id={props.drinkName}
+                        className="shop-item-img static"
+                    />
+                    <img
+                        src={
+                            process.env.PUBLIC_URL +
+                            props.drinkGIF
+                        }
+                        alt={props.drinkName}
+                        id={props.drinkName}
+                        className="shop-item-img active"
+                    />
+                </div>
+                {/* 
                 <div className="shop-item-buttons flex">
                     <div className="plus view-details" onClick={decrement}>
                         <AiOutlineMinus size={30} />
@@ -57,7 +78,8 @@ export default function ShopItem(props) {
                     <div className="plus view-details" onClick={increment}>
                         <AiOutlinePlus size={30} />
                     </div>
-                </div>
+                </div> 
+                */}
             </div>
 
             {visibility && (

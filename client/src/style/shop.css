@@ -1,79 +1,100 @@
 .shop-items {
+    width: 93vw;
+    margin: auto auto;
     background-color: var(--primary);
+    padding: 20px;
     display: grid;
+    gap: 2vw;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
 }
 
-.shop-item {
-    padding: 20px 20px;
-    border: var(--thin-border);
-}
-
-.shop-item-img {
-    height: 550px;
-    user-select: none;
-    transition: all 1s ease-in-out !important;
-}
-
-.price-tag {
-    width: 150px;
-    position: absolute;
-}
-
-.price-img {
-    width: 100px;
-    transition: all 600ms ease-in-out !important;
-}
-
-.hover2:hover .price-img {
-    transform: scale(1.1);
-}
-
-.shop-bg-title {
-    font-size: 45px;
-    font-weight: 800;
-    letter-spacing: 8px;
-    width: 30%;
-    position: absolute;
-    z-index: 3;
-    transform: translateX(2%) translateY(150%);
-    transition: all 1s ease-in-out !important;
-    user-select: none;
-}
-
-.shop-item:hover .shop-item-img {
-    transform: scale(1.1);
-}
-
-.text-hover:hover .shop-bg-title {
-    letter-spacing: 16px;
-}
-
-.shop-item-buttons {
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.view-details {
-    padding: 10px 20px;
-    font-size: 22px;
-    border-radius: var(--large-radius);
-    background-color: var(--primary);
-    width: fit-content;
-    user-select: none;
-}
-
-.plus {
+.lips {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px;
-    width: 50px;
-    height: 50px;
 }
 
+.lips img {
+    width: 100px;
+    height: fit-content;
+}
+
+.lips span {
+    height: 60px;
+}
+
+.smacking {
+    font-family: "BobbyJones";
+}
+
+.static {
+    position: absolute;
+    transition: all 500ms ease;
+}
+
+.static:hover {
+    opacity: 0;
+    transition: all 500ms ease;
+}
+
+.shop-item-img {
+    width: 29vw;
+    border-radius: var(--basic-radius);
+}
+
+@media (max-width: 1200px) {
+    .shop-bg-title {
+        font-size: 34px;
+        letter-spacing: 5px;
+        transform: translateX(2%) translateY(150%);
+    }
+
+    .text-hover:hover .shop-bg-title {
+        letter-spacing: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .shop-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .shop-item-img {
+        width: 43vw;
+    }
+
+    .shop-bg-title {
+        width: 45%;
+    }
+
+    .lips {
+        gap: 10px;
+    }
+
+    .lips img {
+        width: 50px;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 450px) {
+    .shop-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .shop-item-img {
+        width: 80vw;
+    }
+
+    .shop-bg-title {
+        width: 101%;
+        left: 0px;
+        transform: translateX(0%) translateY(150%);
+    }
+}
+
+/* 
 .gradient {
     background-position: center;
     background-size: 100%;
@@ -106,38 +127,58 @@
 
 #red-gradient {
     background-image: radial-gradient(var(--tertiary-light-4), var(--tertiary-4), var(--tertiary-dark-4));
+} */
+
+/* .price-tag {
+    width: 150px;
+    position: absolute;
 }
 
-@media (max-width: 1200px) {
-    .shop-bg-title {
-        font-size: 34px;
-        letter-spacing: 5px;
-        transform: translateX(2%) translateY(150%);
-    }
-
-    .text-hover:hover .shop-bg-title {
-        letter-spacing: 10px;
-    }
+.price-img {
+    width: 100px;
+    transition: all 600ms ease-in-out !important;
 }
 
-@media (max-width: 900px) {
-    .shop-items {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .shop-bg-title {
-        width: 45%;
-    }
+.hover2:hover .price-img {
+    transform: scale(1.1);
 }
 
-@media (max-width: 450px) {
-    .shop-items {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .shop-bg-title {
-        width: 101%;
-        left: 0px;
-        transform: translateX(0%) translateY(150%);
-    }
+.shop-bg-title {
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 8px;
+    width: 30%;
+    position: absolute;
+    z-index: 3;
+    transform: translateX(2%) translateY(150%);
+    transition: all 1s ease-in-out !important;
+    user-select: none;
 }
+
+.text-hover:hover .shop-bg-title {
+    letter-spacing: 16px;
+}
+
+.shop-item-buttons {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.view-details {
+    padding: 10px 20px;
+    font-size: 22px;
+    border-radius: var(--large-radius);
+    background-color: var(--primary);
+    width: fit-content;
+    user-select: none;
+}
+
+.plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+} */

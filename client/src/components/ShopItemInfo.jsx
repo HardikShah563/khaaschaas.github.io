@@ -14,7 +14,7 @@ export default function ShopItemInfo(props) {
                     <div className="cross-icon flex cur" onClick={props.toggleVisibility}>
                         <RxCross2 size={30} />
                     </div>
-                    hello world
+                    
                 </div>
             </div>
         </>

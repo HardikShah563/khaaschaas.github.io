@@ -1,0 +1,15 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary);
+}
+
+.main-img {
+    width: 100vw;
+    transform: translateY(-200px);
+}
+
+.main-para {
+    font-size: 28px;
+}

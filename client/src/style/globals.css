@@ -2,10 +2,13 @@
 :root {
     --background: #F6F5F6;
     --background-dark: #F4F1ED;
+    --background-blue: #C2D8E5;
     /* primary */
     --primary: #FFFFFF;
     --primary-light: #d0d0d0;
     --primary-dark: #7f7f7f;
+    --yellow: #FFED00;
+    --kulhad: #D77051;
     /* secondary */
     --secondary: #091E42;
     --secondary-dark: #000000;
@@ -58,6 +61,36 @@
     src: url(../font/Poppins-Thin.ttf);
 }
 
+@font-face {
+    font-family: BobbyJones;
+    src: url(../font/BobbyJones.otf);
+}
+
+@font-face {
+    font-family: Stella;
+    src: url(../font/Stella.ttf);
+}
+
+@font-face {
+    font-family: Fragile;
+    src: url(../font/fragile.otf);
+}
+
+.bobby {
+    font-family: BobbyJones;
+    font-weight: 400;
+}
+
+.stella {
+    font-family: Stella;
+    font-weight: 400;
+}
+
+.fragile {
+    font-family: Fragile;
+    font-weight: 400;
+}
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -66,16 +99,8 @@
     overflow-x: hidden;
 }
 
-body {
-    background-color: var(--tertiary-dark-2) !important;
-}
-
-.page {
-    background-color: var(--tertiary-dark-2);
-}
-
 .page-contents {
-    padding-block: 100px;
+    padding-top: 12vh;
 }
     
 .flex {
@@ -83,19 +108,40 @@ body {
 }
 
 .v-big-heading {
-    width: 70%;
-    margin: 10vh auto;
-    font-size: 140px;
-    line-height: 120px;
-    letter-spacing: 2px;
+    margin: auto auto 5vh auto;
+    font-size: 18vw;
     text-align: center;
     overflow: hidden;
+}
+
+.little-big-heading {
+    font-size: 10vw;
+    letter-spacing: 5px;
+    position: relative;
+    z-index: 2;
 }
 
 .big-heading {
     font-size: 56px;
     letter-spacing: 2px;
     text-align: center;
+}
+
+.main-btn {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: var(--yellow);
+    box-shadow: 4px 4px 0px var(--kulhad);
+    border: var(--norm-border);
+    border-radius: var(--small-radius);
+}
+
+.main-btn:hover {
+    padding: 10px 24px;
+    box-shadow: 0px 0px 0px var(--failure-text);
 }
 
 .simple-heading {
@@ -168,27 +214,9 @@ body {
     border-radius: var(--large-radius);
 }
 
-@media (max-width: 1000px) {
-    .v-big-heading {
-        font-size: 100px;
-        line-height: 90px;
-    }
-}
-
-@media (max-width: 750px) {
-    .v-big-heading {
-        width: 100%;
-        font-size: 80px;
-        line-height: 70px;
-    }
-}
-
 @media (max-width: 550px) {
     .v-big-heading {
-        font-size: 50px;
-        line-height: 45px;
-        font-weight: 200;
-        letter-spacing: 0px;
+        line-height: 100px;
     }
 
     .big-heading {
@@ -197,6 +225,10 @@ body {
 
     .page {
         padding: 10px;
+    }
+
+    .v-big-heading {
+        line-height: 60px;
     }
 }
 

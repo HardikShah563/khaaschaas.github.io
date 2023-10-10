@@ -1,6 +1,8 @@
 const shopItems = [
     {
         drinkURL: "blueberry",
+        drinkStatic: "/media/pudina_img.png",
+        drinkGIF: "/media/tkc_pudina.gif",
         backgroundColor: "violet",
         backgroundURL: "berries",
         drinkName: "BLUEBERRY",
@@ -8,6 +10,8 @@ const shopItems = [
         drinkCost: 19.99,
     }, {
         drinkURL: "punjabi",
+        drinkStatic: "/media/pudina_img.png",
+        drinkGIF: "/media/tkc_pudina.gif",
         backgroundColor: "white",
         backgroundURL: "berries",
         drinkName: "PUNJABI",
@@ -15,6 +19,8 @@ const shopItems = [
         drinkCost: 19.99,
     }, {
         drinkURL: "gujarati",
+        drinkStatic: "/media/pudina_img.png",
+        drinkGIF: "/media/tkc_pudina.gif",
         backgroundColor: "yellow",
         backgroundURL: "spices",
         drinkName: "GUJARATI",
@@ -22,6 +28,8 @@ const shopItems = [
         drinkCost: 19.99,
     }, {
         drinkURL: "masala",
+        drinkStatic: "/media/pudina_img.png",
+        drinkGIF: "/media/tkc_pudina.gif",
         backgroundColor: "white",
         backgroundURL: "spices",
         drinkName: "MASALA",
@@ -29,6 +37,8 @@ const shopItems = [
         drinkCost: 19.99,
     }, {
         drinkURL: "peri_peri",
+        drinkStatic: "/media/pudina_img.png",
+        drinkGIF: "/media/tkc_pudina.gif",
         backgroundColor: "red",
         backgroundURL: "chilli",
         drinkName: "PERI-PERI",
@@ -36,6 +46,8 @@ const shopItems = [
         drinkCost: 19.99,
     }, {
         drinkURL: "pudhina",
+        drinkStatic: "/media/pudina_img.png",
+        drinkGIF: "/media/tkc_pudina.gif",
         backgroundColor: "green",
         backgroundURL: "pudina",
         drinkName: "PUDINA",
@@ -43,6 +55,8 @@ const shopItems = [
         drinkCost: 19.99,
     }, {
         drinkURL: "cookie_cream",
+        drinkStatic: "/media/pudina_img.png",
+        drinkGIF: "/media/tkc_pudina.gif",
         backgroundColor: "red",
         backgroundURL: "chilli",
         drinkName: "COOKIES",
@@ -50,6 +64,8 @@ const shopItems = [
         drinkCost: 19.99,
     }, {
         drinkURL: "mango",
+        drinkStatic: "/media/pudina_img.png",
+        drinkGIF: "/media/tkc_pudina.gif",
         backgroundColor: "yellow",
         backgroundURL: "aam",
         drinkName: "MANGO",
@@ -57,6 +73,8 @@ const shopItems = [
         drinkCost: 19.99,
     }, {
         drinkURL: "rose",
+        drinkStatic: "/media/pudina_img.png",
+        drinkGIF: "/media/tkc_pudina.gif",
         backgroundColor: "baby-pink",
         backgroundURL: "rose_flower",
         drinkName: "ROSE",

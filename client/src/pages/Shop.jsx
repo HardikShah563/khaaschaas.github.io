@@ -16,8 +16,17 @@ export default function Shop() {
     return (
         <>
             <div className="page-contents">
+                <div className="big-heading lips">
+                    <span className="">
+                        <img src={
+                            process.env.PUBLIC_URL +
+                            `/images/lips.gif`
+                        } alt="" />
+                    </span>
+                    <span className="smacking">SMACKING</span>
+                </div>
                 <div className="v-big-heading">
-                    SHOP YOUR FAVOURITE FLAVOUR
+                    Flavours
                 </div>
 
                 <div className="shop-items">
@@ -28,6 +37,8 @@ export default function Shop() {
                                 backgroundColor={el.backgroundColor}
                                 backgroundURL={el.backgroundURL}
                                 drinkName={el.drinkName}
+                                drinkStatic={el.drinkStatic}
+                                drinkGIF={el.drinkGIF}
                                 drinkFullName={el.drinkFullName}
                                 drinkCost={el.drinkCost}
                             />
