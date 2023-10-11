@@ -1,26 +1,25 @@
+// importing from react
 import { useNavigate } from "react-router-dom";
+// importing stylesheet
 import "../style/home.css";
+// importing components
+import Marquee from "../components/Marquee";
 
 export default function Home() {
     const navigate = useNavigate();
     return (
         <>
-
             <div className="page-contents">
                 <div className="main">
-                    <h1 className="little-big-heading stella txt-ctr">
-                        Khaas Chaas
-                    </h1>
-                    <p className="txt-ctr bobby main-para">
-                        Desi cold drink
-                    </p>
-                    <span className="main-btn cur" onClick={() => { navigate("/shop") }}>
-                        Explore Drinks
-                    </span>
+                    <img
+                        src="/images/logo-straight.png"
+                        alt=""
+                        className="main-title-img"
+                    />
                 </div>
 
-                <p className="txt-ctr bobby main-para">
-                    Order at:
+                <p className="txt-ctr bobby main-para margin-top-20">
+                    Available at:
                 </p>
 
                 <div className="flex delivery-logos">
@@ -59,7 +58,7 @@ export default function Home() {
                 />
             </div>
 
-            <div className="out-story flex">
+            <div className="out-story">
                 <div className="story-title">
                     <h1 className="bobby">OUR <br />STORY</h1>
                 </div>
@@ -68,6 +67,11 @@ export default function Home() {
                 </div>
             </div>
 
+            <Marquee
+                limit={20}
+                text="DESI DESI NA BOLA KAR&nbsp;&nbsp;&nbsp;&nbsp;KHAASS CHAAS PIYA KAR&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;"
+                color={"yellow"}
+            />
         </>
     );
 };

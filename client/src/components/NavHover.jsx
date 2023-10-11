@@ -1,13 +1,8 @@
+// importing from react
 import React from 'react';
-import '../style/navhover.css';
-
-import {
-    blueImg,
-    mangoImg,
-    masalaImg,
-    pudinaImg,
-} from '../media/index';
 import { useNavigate } from 'react-router';
+// importing stylesheet
+import '../style/navhover.css';
 
 const NavHover = () => {
     const navigate = useNavigate();
@@ -15,23 +10,20 @@ const NavHover = () => {
     const products = [
         {
             name: 'Blueberry',
-            img: "/images/media/blue_img.png"
-        },
-        {
+            img: "blue_img.png"
+        }, {
             name: 'Mango',
-            img: "/images/media/mango_img.png"
+            img: "mango_img.png"
         }, {
             name: 'Punjabi',
-            img: "/images/media/punjabi_img.png"
+            img: "punjabi_img.png"
         }, {
             name: 'Masala',
-            img: "/images/media/masala_img.png"
-        },
-        {
+            img: "masala_img.png"
+        }, {
             name: 'Pudina',
-            img: "/images/media/pudina_img.png"
+            img: "pudina_img.png"
         },
-
     ];
 
     // Calculate the number of columns based on the number of products
@@ -56,7 +48,11 @@ const NavHover = () => {
                             <img
                                 onClick={() => {navigate("/shop")}} 
                                 className="product-img"
-                                src={product.img}
+                                src={
+                                    process.env.PUBLIC_URL + 
+                                    "/images/media/" + 
+                                    product.img
+                                }
                                 alt={product.name}
                             />
                         </div>

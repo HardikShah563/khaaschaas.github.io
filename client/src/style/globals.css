@@ -107,6 +107,11 @@
     display: flex;
 }
 
+.main-title-img {
+    width: 50vw;
+    margin: auto auto;
+}
+
 .v-big-heading {
     margin: auto auto 5vh auto;
     font-size: 18vw;

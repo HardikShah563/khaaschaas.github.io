@@ -1,0 +1,14 @@
+.marquee {
+    position: relative;
+    padding: 10px;
+    margin-block: 10px;
+}
+
+.yellow-bg {
+    background-color: var(--yellow);
+}
+
+.marquee-text {
+    font-size: 22px;
+    color: var(--secondary-dark);
+}
