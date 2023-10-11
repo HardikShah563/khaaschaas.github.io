@@ -1,13 +1,19 @@
 .marquee {
     position: relative;
+    margin-block: 50px;
     padding: 10px;
+    border-block: var(--thic-border);
 }
 
 .yellow-bg {
     background-color: var(--yellow);
 }
 
+.kulhad-bg {
+    background-color: var(--kulhad);
+}
+
 .marquee-text {
-    font-size: 22px;
+    font-size: 28px;
     color: var(--secondary-dark);
 }

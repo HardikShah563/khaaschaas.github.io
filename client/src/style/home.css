@@ -29,15 +29,75 @@
 }
 
 .story-text {
-    width: 75vw;
+    width: 85vw;
     margin: 40px auto 0px auto;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
+}
+
+.revolution-text-parent {
+    width: 85vw;
+    margin: 40px auto 0px auto;
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.revolution-text {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.revolution-icons-parent {
+    width: 85vw;
+    margin: 40px auto 0px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.revolution-icon {
+    min-width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    background-color: var(--secondary-dark);
+}
+
+.revolution-hr {
+    min-width: 12vw;
+    height: 0px;
+    border: var(--thic-border);
+    border-style: dashed;
+}
+
+.revolution-hr.white-hr {
+    border-color: var(--primary);
+}
+
+.revolution-hr.black-hr {
+    width: 100%;
+}
+
+.revolution-images {
+    margin-top: 40px;
+    justify-content: center;
+    gap: 8vw;
 }
 
 @media (max-width: 1100px) {
     .main-img {
         transform: translateY(-10vw);
+    }
+
+    .revolution-text-parent {
+        width: 85vw;
+    }
+
+    .revolution-hr {
+        min-width: 8vw;
     }
 }
 
@@ -63,11 +123,85 @@
     .delivery-logos img {
         width: 100px;
     }
+
+    .revolution-hr {
+        min-width: 6vw;
+    }
+
+    .revolution-images {
+        gap: 2vw;
+    }
+
+    .revolution-text-parent {
+        width: 95vw;
+    }
+
+    .revolution-text {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 550px) {
     .story-text {
         font-size: 14px;
         text-align: left;
+    }
+
+    .revolution-icon {
+        min-width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+
+    .revolution-text-parent {
+        flex-direction: column;
+        width: 85vw;
+        gap: 25px;
+    }
+    
+    .revolution-text {
+        font-size: 14px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .revolution-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .revolution-icons-parent {
+        flex-direction: column;
+        width: 110px;
+        margin-inline: 20px;
+    }
+    
+    .revolution-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .revolution-hr {
+        width: 0px !important;
+        height: 30vh;
+    }
+
+    .revolution-hr.black-hr {
+        min-width: 0px;
+    }
+
+    .revolution-hr.white-hr {
+        height: 0px;
+    }
+
+    .revolution-images {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .revolution-images img {
+        width: 250px;
     }
 }

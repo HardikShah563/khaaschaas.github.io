@@ -4,6 +4,10 @@ import { useNavigate } from "react-router-dom";
 import "../style/home.css";
 // importing components
 import Marquee from "../components/Marquee";
+// importing icons
+import { BsBicycle } from "react-icons/bs";
+import { MdOutlineDirectionsBike } from "react-icons/md";
+import { FaMotorcycle, FaCarSide } from "react-icons/fa";
 
 export default function Home() {
     const navigate = useNavigate();
@@ -68,12 +72,58 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="margin-block-10">
+            <div className="section">
                 <Marquee
                     limit={20}
                     text="DESI DESI NA BOLA KAR&nbsp;&nbsp;&nbsp;&nbsp;KHAASS CHAAS PIYA KAR&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;"
                     color={"yellow"}
                 />
+            </div>
+
+            <div className="section">
+                <div className="story-title">
+                    <h1 className="yellow-box-title stella">REVOLUTIONIZING KHAAS PACKAGING</h1>
+                </div>
+                <div className="revolution-text-parent">
+                    <div className="revolution-text">
+                        In April  2023, Khaas Chaas introduced 200ml glass bottles, offering chaas, lassi, and buttermilk. Over four months, these classic bottles delighted customers and refreshed palates.
+                    </div>
+                    <div className="revolution-text">
+                        In August 2023, we decided to take a bold step to align our brand with eco-conscious choices. We transitioned to 200ml PET plastic bottles, reducing our environmental footprint
+                    </div>
+                    <div className="revolution-text">
+                        In October 2023, brace for a game-changing shift as we unveil eco-friendly spout pouches. Redefining packaging and our dedication to sustainability, setting a new standard in the refreshments industry.
+                    </div>
+                </div>
+                <div className="revolution-flex">
+                    <div className="revolution-icons-parent flex">
+                        <div className="revolution-hr white-hr"></div>
+
+                        <div className="revolution-icon">
+                            <BsBicycle color="#FFED00" />
+                        </div>
+
+                        <div className="revolution-hr black-hr"></div>
+
+                        <div className="revolution-icon">
+                            <FaMotorcycle color="#FFED00" />
+                        </div>
+
+                        <div className="revolution-hr black-hr"></div>
+
+                        <div className="revolution-icon">
+                            <FaCarSide color="#FFED00" />
+                        </div>
+
+                        <div className="revolution-hr white-hr"></div>
+                    </div>
+
+                    <div className="flex revolution-images">
+                        <img src="/images/glass.png" alt="glass bottles" />
+                        <img src="/images/plastic.png" alt="glass bottles" />
+                        <img src="/images/spouch.png" alt="glass bottles" />
+                    </div>
+                </div>
             </div>
         </>
     );
