@@ -30,7 +30,7 @@ export default function Shop() {
                 </div>
 
                 <p className="txt-ctr bobby main-para">
-                    Order at:
+                    Available at:
                 </p>
 
                 <div className="flex delivery-logos">
@@ -44,7 +44,7 @@ export default function Shop() {
                         />
                     </a>
 
-                    <hr className="vertical-hr" />
+                    <span>|</span>
 
                     <a target="_blank" href="https://link.zomato.com/xqzv/rshare?id=473331540c6b9f5a">
                         <img

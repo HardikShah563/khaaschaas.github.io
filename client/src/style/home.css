@@ -7,7 +7,6 @@
 .main-img {
     width: 100vw;
     transform: translateY(-140px);
-    transform: translateY(-140px);
 }
 
 .main-para {
@@ -16,14 +15,59 @@
 
 .delivery-logos {
     justify-content: center;
-    gap: 40px;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
 }
 
 .delivery-logos img {
     width: 150px;
 }
 
-.vertical-hr {
-    border: var(--thin-border);
-    margin: 10px;
+.section {
+    margin-bottom: 10vh;
+}
+
+.story-text {
+    width: 75vw;
+    margin: 40px auto 0px auto;
+    text-align: center;
+    font-size: 22px;
+}
+
+@media (max-width: 1100px) {
+    .main-img {
+        transform: translateY(-10vw);
+    }
+}
+
+@media (max-width: 800px) {
+    .main-img {
+        /* height: 100vh; */
+        transform: translateY(-40px);
+        background-size: cover;
+        background-clip: content-box;
+        background-position: center;
+    }
+
+    .story-text {
+        width: 90vw;
+        font-size: 18px;
+    }
+
+    .delivery-logos {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .delivery-logos img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 550px) {
+    .story-text {
+        font-size: 14px;
+        text-align: left;
+    }
 }

@@ -47,15 +47,12 @@ nav {
     display: flex;
     gap: 5px;
     align-items: center;
-<<<<<<< Updated upstream
     margin: 10px;
     color: var(--secondary-dark);
-=======
     font-weight: 600;
     background-color: var(--yellow);
     margin: 10px;
     border-radius: var(--large-radius);
->>>>>>> Stashed changes
 }
 
 .login-icon {
@@ -176,15 +173,6 @@ a hr {
 
     .dropdown-content {
         display: none;
-        position: relative;
-        transform: translateX(0);
-        background-color: transparent;
-        box-shadow: none;
-        text-align: left;
-        min-width: 250px;
-        border-left: 1px solid var(--white);
-        border-radius: 0px;
-        margin-left: 20px;
     }
 
     .dropdown-block {
