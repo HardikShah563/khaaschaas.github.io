@@ -29,10 +29,6 @@ nav {
     color: var(--white);
 }
 
-.nav-lines i {
-    color: var(--black);
-}
-
 .nav-links {
     display: flex;
     justify-content: center;
@@ -101,9 +97,10 @@ nav {
 }
 
 .Bar {
-    width: 20px;
-    height: 2px;
-    background-color: var(--secondary);
+    width: 30px;
+    height: 4px;
+    background-color: var(--yellow);
+    box-shadow: 2px 2px 0px var(--secondary-dark);
     border-radius: 8px;
     margin: 5px 0;
 }

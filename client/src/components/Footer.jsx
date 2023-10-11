@@ -1,6 +1,10 @@
+// importing from react
+import { useNavigate } from "react-router";
+// importing stylesheet
 import "../style/footer.css";
 
 export default function Footer() {
+    const navigate = useNavigate();
     return (
         <>
             <footer class="footer" id="footer">
@@ -17,7 +21,7 @@ export default function Footer() {
                     </div>
 
                     <div class="foot-section">
-                        <li class="heading"><span class="yellow-text">Home</span></li>
+                        <li class="heading yellow-text"><span class="foot-heading bobby">Home</span></li>
                         <li><a href="#">Our Story</a></li>
                         <li><a href="#">Flavours</a></li>
                         <li><a href="#">Location</a></li>
@@ -25,7 +29,7 @@ export default function Footer() {
                     </div>
 
                     <div class="foot-section">
-                        <li class="heading"><span class="yellow-text">Shop</span></li>
+                        <li class="heading yellow-text"><span class="foot-heading bobby">Shop</span></li>
                         <li><a href="#">Masala Chaas</a></li>
                         <li><a href="#">Pudina Spicy Chaas</a></li>
                         <li><a href="#">Classic Punjabi Lassi</a></li>
@@ -33,7 +37,7 @@ export default function Footer() {
                     </div>
 
                     <div class="foot-section">
-                        <li class="heading"><span class="yellow-text">Company</span></li>
+                        <li class="heading yellow-text"><span class="foot-heading bobby">Company</span></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Community</a></li>
                         <li><a href="#">Review Lassi</a></li>
@@ -41,15 +45,15 @@ export default function Footer() {
                     </div>
 
                     <div class="foot-section">
-                        <li class="heading"><span class="yellow-text">Social</span></li>
-                        <li><a href="#">Instagram</a></li>
+                        <li class="heading yellow-text"><span class="foot-heading bobby">Social</span></li>
+                        <li><a href="">Instagram</a></li>
                         <li><a href="#">Youtube</a></li>
                         <li><a href="#">Facebook</a></li>
                         <li><a href="#">Twitter</a></li>
                     </div>
                 </div>
 
-                <hr />
+                <hr className="footer-hr" />
 
                 <div class="below-footer-links">
                     <div class="below-footer-section privacy-policy">

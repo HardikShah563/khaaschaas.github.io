@@ -1,34 +1,54 @@
 .form {
-    width: 600px;
-    margin: 10vh auto;
+    width: 650px;
+    margin: 10vh auto 0px auto;
+}
+
+.home-form {
+    margin: 5vh auto;
 }
 
 .input-title {
     font-size: 20px;
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: var(--secondary-dark);
 }
 
 .input {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 98%;
     height: 50px;
     font-size: 20px;
     padding-inline: 10px;
+    margin: auto auto;
     border: var(--norm-border);
+    background-color: var(--yellow);
+    box-shadow: 4px 4px 0px var(--kulhad);
     outline: none;
     border-radius: var(--v-small-radius);
+}
+
+.textarea {
+    height: 150px;
+    resize: none;
 }
 
 .form-btn {
     font-size: 20px;
     font-weight: 600;
-    color: var(--primary);
-    background-color: var(--secondary-dark);
+    margin: 5px auto;
+    color: var(--secondary-dark);
+    background-color: var(--yellow-dark);
+    box-shadow: 4px 4px 0px var(--kulhad);
 }
 
 .form-btn:hover {
     font-size: 22px;
+    background-color: var(--kulhad-dark);
 }
 
 .sign-with {
@@ -48,7 +68,7 @@
     border-radius: var(--small-radius);
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
     .form {
         width: 95vw;
     }

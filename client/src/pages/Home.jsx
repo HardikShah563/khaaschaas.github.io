@@ -8,6 +8,8 @@ import Marquee from "../components/Marquee";
 import { BsBicycle } from "react-icons/bs";
 import { MdOutlineDirectionsBike } from "react-icons/md";
 import { FaMotorcycle, FaCarSide } from "react-icons/fa";
+// importing components
+import ContactUs from "../components/ContactUs";
 
 export default function Home() {
     const navigate = useNavigate();
@@ -63,7 +65,34 @@ export default function Home() {
                 />
             </div>
 
-            <div className="our-story section">
+            <div className="first-marquee">
+                <Marquee
+                    limit={20}
+                    text="DESI DESI NA BOLA KAR&nbsp;&nbsp;&nbsp;&nbsp;KHAASS CHAAS PIYA KAR&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;"
+                    color={"yellow"}
+                />
+            </div>
+            
+            <div className="numbers flex">
+                <div className="numbers-div">
+                    <div className="metric big-heading">1000+</div>
+                    <div className="metric-name simple-heading">Units sold yet</div>
+                </div>
+                <div className="numbers-div">
+                    <div className="metric big-heading">1000+</div>
+                    <div className="metric-name simple-heading">Units sold yet</div>
+                </div>
+                <div className="numbers-div">
+                    <div className="metric big-heading">1000+</div>
+                    <div className="metric-name simple-heading">Units sold yet</div>
+                </div>
+                <div className="numbers-div">
+                    <div className="metric big-heading">1000+</div>
+                    <div className="metric-name simple-heading">Units sold yet</div>
+                </div>
+            </div>
+
+            <div className="">
                 <div className="story-title">
                     <h1 className="yellow-box-title stella">OUR STORY</h1>
                 </div>
@@ -72,7 +101,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="section">
+            <div className="second-marquee">
                 <Marquee
                     limit={20}
                     text="DESI DESI NA BOLA KAR&nbsp;&nbsp;&nbsp;&nbsp;KHAASS CHAAS PIYA KAR&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;"
@@ -82,7 +111,7 @@ export default function Home() {
 
             <div className="section">
                 <div className="story-title">
-                    <h1 className="yellow-box-title stella">REVOLUTIONIZING KHAAS PACKAGING</h1>
+                    <h1 className="yellow-box-title stella">KHAAS PACKAGING</h1>
                 </div>
                 <div className="revolution-text-parent">
                     <div className="revolution-text">
@@ -125,6 +154,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
+            <ContactUs />
         </>
     );
 };
