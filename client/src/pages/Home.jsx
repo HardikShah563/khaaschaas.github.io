@@ -7,6 +7,7 @@ import Marquee from "../components/Marquee";
 
 export default function Home() {
     const navigate = useNavigate();
+    const navigate = useNavigate();
     return (
         <>
             <div className="page-contents">
@@ -44,6 +45,30 @@ export default function Home() {
                             alt=""
                         />
                     </a>
+                </div>
+
+                <p className="txt-ctr bobby main-para">
+                    Order at:
+                </p>
+
+                <div className="flex delivery-logos">
+                    <img
+                        src={
+                            process.env.PUBLIC_URL +
+                            `/images/swiggy.png`
+                        }
+                        alt=""
+                    />
+
+                    <hr className="vertical-hr" />
+
+                    <img
+                        src={
+                            process.env.PUBLIC_URL +
+                            `/images/zomato.png`
+                        }
+                        alt=""
+                    />
                 </div>
             </div>
 

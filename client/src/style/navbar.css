@@ -47,8 +47,15 @@ nav {
     display: flex;
     gap: 5px;
     align-items: center;
+<<<<<<< Updated upstream
     margin: 10px;
     color: var(--secondary-dark);
+=======
+    font-weight: 600;
+    background-color: var(--yellow);
+    margin: 10px;
+    border-radius: var(--large-radius);
+>>>>>>> Stashed changes
 }
 
 .login-icon {

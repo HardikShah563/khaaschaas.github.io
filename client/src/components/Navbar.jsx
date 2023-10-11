@@ -115,6 +115,7 @@ export default function Navbar() {
                         </div>
 
                         <div className="dropdown">
+<<<<<<< Updated upstream
                             <a target="_blank" href="https://www.instagram.com/thekhaaschaas/">
                                 <div
                                     className="nav-div-name login-icon main-btn"
@@ -122,6 +123,14 @@ export default function Navbar() {
                                     <AiOutlineInstagram size={30} />
                                 </div>
                             </a>
+=======
+                            <div
+                                className="nav-div-name login-icon main-btn"
+                                onClick={() => { navigate("/cart") }}
+                            >
+                                <AiOutlineShoppingCart size={30} />
+                            </div>
+>>>>>>> Stashed changes
 
                             {/* <div className="dropdown-content">
                                 <NavHover />

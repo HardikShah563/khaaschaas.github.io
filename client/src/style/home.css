@@ -7,6 +7,7 @@
 .main-img {
     width: 100vw;
     transform: translateY(-140px);
+    transform: translateY(-140px);
 }
 
 .main-para {
@@ -25,30 +26,4 @@
 .vertical-hr {
     border: var(--thin-border);
     margin: 10px;
-}
-
-.out-story {
-    margin: auto auto;
-}
-
-.story-title {
-    display: flex;
-    align-items: center;
-    font-size: 80px;
-    width: 100%;
-    line-height: 150px;
-    color: var(--yellow);
-    text-shadow: 4px 4px 0px var(--secondary-dark);
-    overflow: none;
-}
-
-.txt-black {
-    color: var(--secondary-dark);
-}
-
-.story-text {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    font-size: 22px;
 }
