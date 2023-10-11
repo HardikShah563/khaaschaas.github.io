@@ -5,6 +5,7 @@ import SignIn from "../pages/SignIn";
 import SignUp from "../pages/SignUp";
 import Shop from "../pages/Shop";
 import ErrorPage from "../pages/ErrorPage";
+import Review from "../pages/Review";
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
             }, {
                 path: "*",
                 element: <ErrorPage />
+            },
+            {
+                path: "/review",
+                element: <Review />
             }
         ]
     }, {
