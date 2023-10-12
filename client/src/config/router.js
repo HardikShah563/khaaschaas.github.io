@@ -6,6 +6,7 @@ import SignUp from "../pages/SignUp";
 import Shop from "../pages/Shop";
 import ErrorPage from "../pages/ErrorPage";
 import Review from "../pages/Review";
+import CampusDelivery from "../pages/CampusDelivery";
 
 const router = createBrowserRouter([
     {
@@ -18,6 +19,9 @@ const router = createBrowserRouter([
             }, {
                 path: "/shop",
                 element: <Shop />
+            }, {
+                path: "/campus-delivery",
+                element: <CampusDelivery />
             }, {
                 path: "*",
                 element: <ErrorPage />

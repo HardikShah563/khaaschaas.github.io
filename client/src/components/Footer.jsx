@@ -53,7 +53,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <hr className="footer-hr" />
+                {/* <hr className="footer-hr" /> */}
 
                 <div class="below-footer-links">
                     <div class="below-footer-section privacy-policy">

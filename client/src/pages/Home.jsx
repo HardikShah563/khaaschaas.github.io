@@ -54,7 +54,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div>
+            <div className="main-img-parent">
                 <img
                     src={
                         process.env.PUBLIC_URL +
@@ -92,7 +92,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="">
+            <div className="our-story">
                 <div className="story-title">
                     <h1 className="yellow-box-title stella">OUR STORY</h1>
                 </div>

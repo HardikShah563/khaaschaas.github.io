@@ -96,8 +96,9 @@ export default function Navbar() {
                         <div className="dropdown">
                             <div
                                 className="nav-div-name main-btn"
+                                onClick={() => { navigate("/campus-delivery") }}
                             >
-                                Learn
+                                Campus Delivery
                             </div>
                         </div>
 
@@ -111,7 +112,7 @@ export default function Navbar() {
                         </div>
 
                         <div className="dropdown">
-                            <a target="_blank" href="https://www.instagram.com/thekhaaschaas/">
+                            <a target="_blank" href="https://instagram.com/thekhaaschaas">
                                 <div
                                     className="nav-div-name login-icon main-btn"
                                 >
