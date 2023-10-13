@@ -51,19 +51,6 @@ nav {
     border-radius: var(--large-radius);
 }
 
-.login-icon {
-    padding: 10px;
-}
-
-.nav-buttons {
-    display: flex;
-}
-
-.button-border {
-    border: var(--border-white);
-    border-radius: var(--radius-10);
-}
-
 .dropdown-content {
     position: absolute;
     left: 0px;
@@ -88,6 +75,14 @@ nav {
     height: 50vh;
     padding-top: 20px;
     z-index: 100;
+}
+
+.swig-icon {
+    width: 21px;
+}
+
+.zom-icon {
+    width: 28px;
 }
 
 /* navigation bar lines for collapsable nav bar */

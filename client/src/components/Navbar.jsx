@@ -102,13 +102,41 @@ export default function Navbar() {
                             </div>
                         </div>
 
-                        <div className="dropdown">
+                        {/* <div className="dropdown">
                             <div
                                 className="nav-div-name login-icon main-btn"
                                 onClick={() => { navigate("/signin") }}
                             >
                                 <BiUser size={30} />
                             </div>
+                        </div> */}
+
+                        <div className="dropdown">
+                            <a target="_blank" href="https://www.swiggy.com/menu/731356?source=sharing">
+                                <div
+                                    className="nav-div-name login-icon main-btn"
+                                >
+                                    <img
+                                        src="./images/swiggy-icon.png"
+                                        alt="swiggy icon"
+                                        className="swig-icon"
+                                    />
+                                </div>
+                            </a>
+                        </div>
+
+                        <div className="dropdown">
+                            <a target="_blank" href="https://link.zomato.com/xqzv/rshare?id=473331540c6b9f5a">
+                                <div
+                                    className="nav-div-name login-icon main-btn"
+                                >
+                                    <img
+                                        src="./images/zomato-icon.png"
+                                        alt="zomato icon"
+                                        className="zom-icon"
+                                    />
+                                </div>
+                            </a>
                         </div>
 
                         <div className="dropdown">
