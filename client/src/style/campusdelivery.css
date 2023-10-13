@@ -4,7 +4,11 @@
 }
 
 .whatsapp-logo {
-    width: 80px !important;
+    width: 200px !important;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: var(--thic-border);
+    border-radius: 50px;
 }
 
 .campus-delivery-logo {

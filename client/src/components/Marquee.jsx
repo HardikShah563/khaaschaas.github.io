@@ -3,8 +3,8 @@ import "../style/marquee.css";
 
 export default function Marquee(props) {
     const marqueeLimit = props.limit;
-    
-    const marqueeText = 
+
+    const marqueeText =
         <span className="marquee-text bobby">
             {props.text}
         </span>
@@ -17,7 +17,10 @@ export default function Marquee(props) {
 
     return (
         <>
-            <marquee className={`marquee flex ${props.color}-bg`} scrollamount="5">
+            <marquee
+                className={`marquee flex ${props.color}-bg`}
+                scrollamount="5"
+            >
                 {marqueeList}
             </marquee>
         </>

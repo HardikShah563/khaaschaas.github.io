@@ -25,11 +25,11 @@ export default function CampusDelivery() {
                 </p>
 
                 <div className="flex delivery-logos campus-delivery-logo">
-                    <a target="_blank" href="https://www.swiggy.com/menu/731356?source=sharing">
+                    <a className="whatsapp-btn" target="_blank" href="https://wa.me/+918657586667">
                         <img
                             src={
                                 process.env.PUBLIC_URL +
-                                `/images/whatsapp-logo.png`
+                                `/images/whatsapp.png`
                             }
                             alt="whatsapp logo"
                             className="whatsapp-logo"

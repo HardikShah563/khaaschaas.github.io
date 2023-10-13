@@ -77,6 +77,10 @@ nav {
     z-index: 100;
 }
 
+.what-icon {
+    width: 30px;
+}
+
 .swig-icon {
     width: 21px;
 }

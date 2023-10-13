@@ -112,6 +112,20 @@ export default function Navbar() {
                         </div> */}
 
                         <div className="dropdown">
+                            <a target="_blank" href="https://wa.me/+918657586667">
+                                <div
+                                    className="nav-div-name login-icon main-btn"
+                                >
+                                    <img
+                                        src="./images/whatsapp-icon.png"
+                                        alt="swiggy icon"
+                                        className="what-icon"
+                                    />
+                                </div>
+                            </a>
+                        </div>
+
+                        <div className="dropdown">
                             <a target="_blank" href="https://www.swiggy.com/menu/731356?source=sharing">
                                 <div
                                     className="nav-div-name login-icon main-btn"

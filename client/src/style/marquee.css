@@ -21,7 +21,6 @@
 @media (max-width: 800px) {
     .marquee {
         padding: 5px;
-        /* margin-block: 30px; */
     }
 
     .marquee-text {

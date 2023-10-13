@@ -70,6 +70,7 @@ export default function Home() {
                     limit={20}
                     text="DESI DESI NA BOLA KAR&nbsp;&nbsp;&nbsp;&nbsp;KHAASS CHAAS PIYA KAR&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;"
                     color={"yellow"}
+                    direction={"left"}
                 />
             </div>
             
@@ -79,16 +80,12 @@ export default function Home() {
                     <div className="metric-name simple-heading">Units sold yet</div>
                 </div>
                 <div className="numbers-div">
-                    <div className="metric big-heading">1000+</div>
-                    <div className="metric-name simple-heading">Units sold yet</div>
+                    <div className="metric big-heading">4.5+</div>
+                    <div className="metric-name simple-heading">Customer Ratings</div>
                 </div>
                 <div className="numbers-div">
-                    <div className="metric big-heading">1000+</div>
-                    <div className="metric-name simple-heading">Units sold yet</div>
-                </div>
-                <div className="numbers-div">
-                    <div className="metric big-heading">1000+</div>
-                    <div className="metric-name simple-heading">Units sold yet</div>
+                    <div className="metric big-heading">25000+</div>
+                    <div className="metric-name simple-heading">Reels Views</div>
                 </div>
             </div>
 
