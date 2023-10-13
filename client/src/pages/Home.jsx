@@ -2,17 +2,30 @@
 import { useNavigate } from "react-router-dom";
 // importing stylesheet
 import "../style/home.css";
+import "../style/review.css";
 // importing components
 import Marquee from "../components/Marquee";
+import ContactUs from "../components/ContactUs";
 // importing icons
 import { BsBicycle } from "react-icons/bs";
 import { MdOutlineDirectionsBike } from "react-icons/md";
 import { FaMotorcycle, FaCarSide } from "react-icons/fa";
-// importing components
-import ContactUs from "../components/ContactUs";
+// importing data
+import reviewData from "../config/reviews";
+import Review from "../components/Review";
 
 export default function Home() {
     const navigate = useNavigate();
+
+    const displayReviews = [];
+    var counter = 0;
+
+    reviewData.map(review => {
+        counter ++;
+        if(counter <= 6) {
+            displayReviews.push(review);
+        }
+    });
 
     return (
         <>
@@ -36,7 +49,7 @@ export default function Home() {
                                 process.env.PUBLIC_URL +
                                 `/images/swiggy.png`
                             }
-                            alt=""
+                            alt="swiggy logo"
                         />
                     </a>
 
@@ -48,7 +61,7 @@ export default function Home() {
                                 process.env.PUBLIC_URL +
                                 `/images/zomato.png`
                             }
-                            alt=""
+                            alt="zomato logo"
                         />
                     </a>
                 </div>
@@ -70,7 +83,6 @@ export default function Home() {
                     limit={20}
                     text="DESI DESI NA BOLA KAR&nbsp;&nbsp;&nbsp;&nbsp;KHAASS CHAAS PIYA KAR&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;"
                     color={"yellow"}
-                    direction={"left"}
                 />
             </div>
 
@@ -98,14 +110,6 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="second-marquee">
-                <Marquee
-                    limit={20}
-                    text="DESI DESI NA BOLA KAR&nbsp;&nbsp;&nbsp;&nbsp;KHAASS CHAAS PIYA KAR&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;"
-                    color={"yellow"}
-                />
-            </div>
-
             <div className="section">
                 <div className="yellow-box-title stella">
                     CAMPUS DELIVERY
@@ -120,11 +124,19 @@ export default function Home() {
                     </div>
                     <div className="campus-delivery-text flex">
                         Experience the convenience of our Campus Delivery system. At Khaas Chaas, we bring our wide range of fresh and flavorful buttermilk and lassi directly to your college campus. Order easily through our user-friendly app, and we'll ensure prompt delivery to your preferred location. Say goodbye to the hassles of leaving campus to find your favorite desi cold drink. Whether it's a refreshing sip between classes or a treat during events, Khaas Chaas is now just a click away, making your campus life even more enjoyable.
-                        <div className="main-btn" onClick={() => {navigate("/campus-delivery")}}>
+                        <div className="main-btn" onClick={() => { navigate("/campus-delivery") }}>
                             Explore Campus Delivery
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className="second-marquee">
+                <Marquee
+                    limit={20}
+                    text="DESI DESI NA BOLA KAR&nbsp;&nbsp;&nbsp;&nbsp;KHAASS CHAAS PIYA KAR&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;"
+                    color={"yellow"}
+                />
             </div>
 
             <div className="section">
@@ -169,6 +181,33 @@ export default function Home() {
                         <img src="/images/glass.png" alt="glass bottles" />
                         <img src="/images/plastic.png" alt="glass bottles" />
                         <img src="/images/spouch.png" alt="glass bottles" />
+                    </div>
+                </div>
+            </div>
+
+            <div className="reviews-section-parent">
+                <div className="story-title">
+                    <h1 className="yellow-box-title stella">KHAAS REVIEWS</h1>
+                </div>
+
+                <div className="reviews flex">
+                    {displayReviews.map(review => (
+                        <>
+                            <Review
+                                id={review.id}
+                                name={review.name}
+                                rating={review.rating}
+                                review={review.review}
+                            />
+                        </>
+                    ))}
+                </div>
+                <div className="review-buttons">
+                    <div className="main-btn cur" onClick={() => {navigate("/reviews")}}>
+                        VIEW ALL REVIEWS
+                    </div>
+                    <div className="main-btn cur">
+                        POST A REVIEW
                     </div>
                 </div>
             </div>

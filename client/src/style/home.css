@@ -141,6 +141,20 @@
     animation: 5s ease infinite float-y;
 }
 
+.reviews-section {
+    /* flex-wrap: wrap; */
+}
+
+.review-buttons {
+    width: fit-content;
+    padding-inline: 20px;
+    margin: auto auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 @keyframes float-y {
     0%, 100% {
         transform: translateY(0);
@@ -235,7 +249,7 @@
     }
 
     .first-marquee {
-        transform: translateY(-23vw);
+        transform: translateY(-24vw);
     }
 
     .story-text {
@@ -308,5 +322,19 @@
     .revolution-images img {
         width: 200px;
         margin-block: 40px;
+    }
+
+    .review-buttons .main-btn {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .first-marquee {
+        transform: translateY(-28vw);
+    }
+
+    .review-buttons {
+        gap: 0px;
     }
 }

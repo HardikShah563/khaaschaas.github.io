@@ -14,6 +14,8 @@
 }
 
 .marquee-text {
+    position: relative;
+    left: -50%;
     font-size: 28px;
     color: var(--secondary-dark);
 }

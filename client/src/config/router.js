@@ -5,7 +5,7 @@ import SignIn from "../pages/SignIn";
 import SignUp from "../pages/SignUp";
 import Shop from "../pages/Shop";
 import ErrorPage from "../pages/ErrorPage";
-import Review from "../pages/Review";
+import Reviews from "../pages/Reviews";
 import CampusDelivery from "../pages/CampusDelivery";
 
 const router = createBrowserRouter([
@@ -27,8 +27,8 @@ const router = createBrowserRouter([
                 element: <ErrorPage />
             },
             {
-                path: "/review",
-                element: <Review />
+                path: "/reviews",
+                element: <Reviews />
             }
         ]
     }, {
