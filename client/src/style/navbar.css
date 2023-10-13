@@ -125,7 +125,7 @@ a hr {
     border: 2px dashed var(--white);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
     .nav-lines {
         display: block;
         cursor: pointer;

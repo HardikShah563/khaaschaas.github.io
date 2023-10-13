@@ -6,12 +6,21 @@
 .whatsapp-logo {
     width: 200px !important;
     margin-top: 20px;
+    margin-inline: 20px;
     padding: 10px 30px;
     border: var(--thic-border);
     border-radius: 50px;
+    box-shadow: 4px 4px 0px var(--kulhad);
 }
 
 .campus-delivery-logo {
     width: fit-content;
     margin: auto auto;
+}
+
+@media (max-width: 800px) {
+    .campus-main-img {
+        transform: translateY(-20px);
+    }
+    
 }

@@ -45,6 +45,24 @@
     margin-bottom: 100px;
 }
 
+.campus-delivery-home {
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh auto;
+}
+
+.campus-delivery-text {
+    flex-direction: column;
+    justify-content: left !important;
+    font-size: 20px;
+    width: 45vw;
+}
+
+.talking-img {
+    width: 45vw;
+}
+
 .numbers {
     gap: 40px;
     justify-content: center;
@@ -148,6 +166,18 @@
     .revolution-hr {
         min-width: 8vw;
     }
+
+    .campus-delivery-text {
+        font-size: 14px;
+    }
+
+    .campus-delivery-text .main-btn {
+        font-size: 14px;
+    }
+    
+    .talking-img {
+        width: 45vw;
+    }
 }
 
 @media (max-width: 800px) {
@@ -167,6 +197,19 @@
 
     .delivery-logos img {
         width: 100px;
+    }
+
+    .campus-delivery-home {
+        flex-direction: column;
+    }
+    
+    .talking-img {
+        width: 400px;
+    }
+
+    .campus-delivery-text {
+        width: 80vw;
+        text-align: center;
     }
 
     .revolution-hr {
@@ -198,6 +241,14 @@
     .story-text {
         font-size: 14px;
         text-align: left;
+    }
+
+    .campus-delivery-home {
+        gap: 10px;
+    }
+
+    .talking-img {
+        width: 80vw;
     }
 
     .revolution-icon {

@@ -118,7 +118,7 @@ export default function Navbar() {
                                 >
                                     <img
                                         src="./images/whatsapp-icon.png"
-                                        alt="swiggy icon"
+                                        alt="whatsapp icon"
                                         className="what-icon"
                                     />
                                 </div>
@@ -158,7 +158,11 @@ export default function Navbar() {
                                 <div
                                     className="nav-div-name login-icon main-btn"
                                 >
-                                    <AiOutlineInstagram size={30} />
+                                    <img
+                                        src="./images/insta-icon.png"
+                                        alt="zomato icon"
+                                        className="zom-icon"
+                                    />
                                 </div>
                             </a>
                         </div>

@@ -73,7 +73,7 @@ export default function Home() {
                     direction={"left"}
                 />
             </div>
-            
+
             <div className="numbers flex">
                 <div className="numbers-div">
                     <div className="metric big-heading">1000+</div>
@@ -104,6 +104,27 @@ export default function Home() {
                     text="DESI DESI NA BOLA KAR&nbsp;&nbsp;&nbsp;&nbsp;KHAASS CHAAS PIYA KAR&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;"
                     color={"yellow"}
                 />
+            </div>
+
+            <div className="section">
+                <div className="yellow-box-title stella">
+                    CAMPUS DELIVERY
+                </div>
+                <div className="campus-delivery-home flex">
+                    <div>
+                        <img
+                            src="./images/talking-talking.png"
+                            alt="two people talking image"
+                            className="talking-img"
+                        />
+                    </div>
+                    <div className="campus-delivery-text flex">
+                        Experience the convenience of our Campus Delivery system. At Khaas Chaas, we bring our wide range of fresh and flavorful buttermilk and lassi directly to your college campus. Order easily through our user-friendly app, and we'll ensure prompt delivery to your preferred location. Say goodbye to the hassles of leaving campus to find your favorite desi cold drink. Whether it's a refreshing sip between classes or a treat during events, Khaas Chaas is now just a click away, making your campus life even more enjoyable.
+                        <div className="main-btn" onClick={() => {navigate("/campus-delivery")}}>
+                            Explore Campus Delivery
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div className="section">
