@@ -4,39 +4,10 @@
 }
 
 .whatsapp-logo {
-    position: absolute;
     width: 80px !important;
 }
 
 .campus-delivery-logo {
     width: fit-content;
     margin: auto auto;
-}
-
-.faq-section {
-    width: 60vw;
-    margin: auto auto;
-}
-
-.faq-question {
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
-    flex-wrap: wrap;
-    height: fit-content;
-}
-
-.plus-icon {
-    font-weight: 600;
-}
-
-.answer {
-    width: 100%;
-    display: block;
-    font-size: 16px;
-    display: none;
-}
-
-.visible {
-    display: block;
 }

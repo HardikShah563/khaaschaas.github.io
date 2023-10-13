@@ -11,7 +11,7 @@ export default function SingleFAQ(props) {
     return (
         <>
             <div className="faq">
-                <div className="faq-question margin-block-10 input flex">
+                <div className="faq-question margin-block-10 input flex" onClick={toggleVisiblity}>
                     <div className="bobby">{props.faqQuestion}</div>
                     <div className="plus-icon cur" onClick={toggleVisiblity}>+</div>
                     <div className={`answer ${visiblity && "visible"}`}>

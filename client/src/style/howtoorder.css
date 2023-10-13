@@ -1,0 +1,28 @@
+.how-to-order-section-parent {
+    /* margin: 10vh auto; */
+}
+
+.how-to-order-img-parent {
+    display: flex;
+    justify-content: center;
+}
+
+.how-to-order-img {
+    width: 500px;
+}
+
+.order-now a {
+    color: var(--secondary-dark);
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .how-to-order-img {
+        width: 80vw;
+    }
+
+    .order-now a {
+        font-size: 14px;
+    }
+    
+}

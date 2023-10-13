@@ -3,14 +3,9 @@ import { useNavigate } from "react-router-dom";
 // importing stylesheet
 import "../style/home.css";
 import "../style/campusdelivery.css";
+import "../style/faq.css";
+import "../style/howtoorder.css";
 // importing components
-import Marquee from "../components/Marquee";
-// importing icons
-import { BsBicycle } from "react-icons/bs";
-import { MdOutlineDirectionsBike } from "react-icons/md";
-import { FaMotorcycle, FaCarSide } from "react-icons/fa";
-// importing components
-import ContactUs from "../components/ContactUs";
 import SingleFAQ from "../components/SingleFAQ";
 
 export default function CampusDelivery() {
@@ -54,27 +49,51 @@ export default function CampusDelivery() {
                 />
             </div>
 
-            <div className="yellow-box-title stella">
-                FAQ
+            <div className="how-to-order-section-parent">
+                <div className="yellow-box-title stella">
+                    HOW TO ORDER?
+                </div>
+
+                <p className="txt-ctr bobby main-para margin-top-20">
+                    One simple step:
+                </p>
+
+                <div className="how-to-order-img-parent">
+                    <img 
+                        src="images/how-to-order.png" 
+                        alt="how to order image"
+                        className="how-to-order-img"
+                    />
+                </div>
+
+                <div className="order-now main-btn">
+                    <a target="_blank" href="https://wa.me/+918657586667">Click here to order now</a>
+                </div>
             </div>
 
-            <div className="faq-section">
-                <SingleFAQ 
-                    faqQuestion={"How to order?"}
-                    faqSolution={"What is the answer to this solution"}
-                />
-                <SingleFAQ 
-                    faqQuestion={"How to order?"}
-                    faqSolution={"What is the answer to this solution"}
-                />
-                <SingleFAQ 
-                    faqQuestion={"How to order?"}
-                    faqSolution={"What is the answer to this solution"}
-                />
-                <SingleFAQ 
-                    faqQuestion={"How to order?"}
-                    faqSolution={"What is the answer to this solution"}
-                />
+            <div className="faq-section-parent">
+                <div className="yellow-box-title stella">
+                    FAQ
+                </div>
+
+                <div className="faq-section">
+                    <SingleFAQ
+                        faqQuestion={"How to order?"}
+                        faqSolution={"What is the answer to this solution"}
+                    />
+                    <SingleFAQ
+                        faqQuestion={"How bad is khaas chaas?"}
+                        faqSolution={"What is the answer to this solution"}
+                    />
+                    <SingleFAQ
+                        faqQuestion={"Did you really go to shark tank?"}
+                        faqSolution={"What is the answer to this solution"}
+                    />
+                    <SingleFAQ
+                        faqQuestion={"Pakka aacha hoga na flavour?"}
+                        faqSolution={"What is the answer to this solution"}
+                    />
+                </div>
             </div>
         </>
     );

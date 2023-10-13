@@ -1,0 +1,43 @@
+.faq-section-parent {
+    width: 60vw;
+    margin: 10vh auto;
+}
+
+.faq-section {
+    margin: auto auto;
+}
+
+.faq-question {
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.plus-icon {
+    font-weight: 600;
+}
+
+.answer {
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .faq-section-parent {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 550px) {
+    .faq-section-parent {
+        width: 95vw;
+    }
+}
