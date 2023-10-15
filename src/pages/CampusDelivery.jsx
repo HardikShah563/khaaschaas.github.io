@@ -11,6 +11,31 @@ import SingleFAQ from "../components/SingleFAQ";
 export default function CampusDelivery() {
     const navigate = useNavigate();
 
+    const faq = [
+        {
+            faqQuestion: "How amazing is khaas chaas",
+            faqSolution: "It is totally amazing",
+        }, {
+            faqQuestion: "How amazing is khaas chaas",
+            faqSolution: "It is totally amazing",
+        }, {
+            faqQuestion: "How amazing is khaas chaas",
+            faqSolution: "It is totally amazing",
+        }, {
+            faqQuestion: "How amazing is khaas chaas",
+            faqSolution: "It is totally amazing",
+        }, {
+            faqQuestion: "How amazing is khaas chaas",
+            faqSolution: "It is totally amazing",
+        }, {
+            faqQuestion: "How amazing is khaas chaas",
+            faqSolution: "It is totally amazing",
+        }, {
+            faqQuestion: "How amazing is khaas chaas",
+            faqSolution: "It is totally amazing",
+        },
+    ];
+
     return (
         <>
             <div className="page-contents">
@@ -59,7 +84,7 @@ export default function CampusDelivery() {
                 </p>
 
                 <div className="how-to-order-img-parent">
-                    <img 
+                    <img
                         src={
                             process.env.PUBLIC_URL +
                             "/images/how-to-order.png"
@@ -80,22 +105,12 @@ export default function CampusDelivery() {
                 </div>
 
                 <div className="faq-section">
-                    <SingleFAQ
-                        faqQuestion={"How to order?"}
-                        faqSolution={"What is the answer to this solution"}
-                    />
-                    <SingleFAQ
-                        faqQuestion={"How bad is khaas chaas?"}
-                        faqSolution={"What is the answer to this solution"}
-                    />
-                    <SingleFAQ
-                        faqQuestion={"Did you really go to shark tank?"}
-                        faqSolution={"What is the answer to this solution"}
-                    />
-                    <SingleFAQ
-                        faqQuestion={"Pakka aacha hoga na flavour?"}
-                        faqSolution={"What is the answer to this solution"}
-                    />
+                    {faq.map(singleFAQ => (
+                        <SingleFAQ
+                            faqQuestion={singleFAQ.faqQuestion}
+                            faqSolution={singleFAQ.faqSolution}
+                        />
+                    ))}
                 </div>
             </div>
         </>
