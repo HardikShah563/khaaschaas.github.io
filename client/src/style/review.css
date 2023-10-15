@@ -13,7 +13,6 @@
     min-height: 100px;
     padding: 10px;
     margin: 5px;
-    /* background-color: var(--yellow); */
     box-shadow: 4px 4px 0px var(--kulhad);
     border: var(--norm-border);
     border-radius: var(--small-radius);
@@ -38,6 +37,7 @@
 .user-name {
     font-size: 22px;
     line-height: 20px;
+    overflow: hidden;
 }
 
 .profile-img {

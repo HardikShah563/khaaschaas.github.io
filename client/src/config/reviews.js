@@ -49,6 +49,16 @@ const reviewData = [
         name: "John Doe",
         rating: 4,
         review: "hello my name is Khaas Chaas",
+    }, {
+        id: 11,
+        name: "John Doe",
+        rating: 5,
+        review: "hello my name is Khaas Chaas",
+    }, {
+        id: 12,
+        name: "John Doe",
+        rating: 2,
+        review: "hello my name is Khaas Chaas",
     }, 
 ];
 

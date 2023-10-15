@@ -63,8 +63,8 @@ export default function ContactUs() {
                     </div>
                     <select 
                         className="input margin-block-5"
-                        name="email" 
-                        id="email"
+                        name="typeOfMsg" 
+                        id="typeOfMsg"
                         value={formData.typeOfMsg}
                         onChange={handleChange}
                         required
@@ -85,7 +85,7 @@ export default function ContactUs() {
                         value={formData.msg}
                         onChange={handleChange}
                         autoComplete="off"
-                        placeholder="Email Address"
+                        placeholder="Leave a message"
                     ></textarea>
 
                     <button

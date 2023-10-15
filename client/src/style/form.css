@@ -59,6 +59,24 @@
     color: #0866FF;
 }
 
+.star-div {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.star-icon {
+    color: var(--kulhad);   
+}
+
+.star-icon.yellow {
+    color: var(--yellow);
+}
+
+.star-icon:hover {
+    color: var(--yellow-dark);
+}
+
 .sign-box {
     width: 30%;
     padding-block: 10px 5px;

@@ -6,13 +6,13 @@ import "../style/review.css";
 // importing components
 import Marquee from "../components/Marquee";
 import ContactUs from "../components/ContactUs";
+import Review from "../components/Review";
 // importing icons
 import { BsBicycle } from "react-icons/bs";
 import { MdOutlineDirectionsBike } from "react-icons/md";
 import { FaMotorcycle, FaCarSide } from "react-icons/fa";
 // importing data
 import reviewData from "../config/reviews";
-import Review from "../components/Review";
 
 export default function Home() {
     const navigate = useNavigate();

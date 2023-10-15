@@ -41,15 +41,11 @@
     font-size: 20px;
 }
 
-.our-story {
-    margin-bottom: 100px;
-}
-
 .campus-delivery-home {
     gap: 40px;
     justify-content: center;
     align-items: center;
-    margin: 5vh auto;
+    margin: auto auto;
 }
 
 .campus-delivery-text {
@@ -64,7 +60,7 @@
 }
 
 .numbers {
-    gap: 40px;
+    gap: 60px;
     justify-content: center;
     flex-wrap: wrap;
     transform: translateY(-140px);
@@ -139,10 +135,6 @@
 .revolution-images img {
     margin-top: 20px;
     animation: 5s ease infinite float-y;
-}
-
-.reviews-section {
-    /* flex-wrap: wrap; */
 }
 
 .review-buttons {
