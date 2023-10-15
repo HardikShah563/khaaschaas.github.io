@@ -9,7 +9,6 @@ import ContactUs from "../components/ContactUs";
 import Review from "../components/Review";
 // importing icons
 import { BsBicycle } from "react-icons/bs";
-import { MdOutlineDirectionsBike } from "react-icons/md";
 import { FaMotorcycle, FaCarSide } from "react-icons/fa";
 // importing data
 import reviewData from "../config/reviews";
@@ -21,8 +20,8 @@ export default function Home() {
     var counter = 0;
 
     reviewData.map(review => {
-        counter ++;
-        if(counter <= 6) {
+        counter++;
+        if (counter <= 6) {
             displayReviews.push(review);
         }
     });
@@ -32,8 +31,11 @@ export default function Home() {
             <div className="page-contents">
                 <div className="main">
                     <img
-                        src="/images/logo-straight.png"
-                        alt=""
+                        src={
+                            process.env.PUBLIC_URL +
+                            "/images/logo-straight.png"
+                        }
+                        alt="main logo"
                         className="main-title-img"
                     />
                 </div>
@@ -117,7 +119,10 @@ export default function Home() {
                 <div className="campus-delivery-home flex">
                     <div>
                         <img
-                            src="./images/talking-talking.png"
+                            src={
+                                process.env.PUBLIC_URL +
+                                "/images/talking-talking.png"
+                            }
                             alt="two people talking image"
                             className="talking-img"
                         />
@@ -178,9 +183,27 @@ export default function Home() {
                     </div>
 
                     <div className="flex revolution-images">
-                        <img src="/images/glass.png" alt="glass bottles" />
-                        <img src="/images/plastic.png" alt="glass bottles" />
-                        <img src="/images/spouch.png" alt="glass bottles" />
+                        <img
+                            src={
+                                process.env.PUBLIC_URL +
+                                "/images/glass.png"
+                            }
+                            alt="glass bottles"
+                        />
+                        <img 
+                            src={
+                                process.env.PUBLIC_URL +
+                                "/images/plastic.png"
+                            }
+                            alt="glass bottles" 
+                        />
+                        <img 
+                            src={
+                                process.env.PUBLIC_URL +
+                                "/images/spouch.png"
+                            } 
+                            alt="glass bottles" 
+                        />
                     </div>
                 </div>
             </div>
@@ -203,10 +226,10 @@ export default function Home() {
                     ))}
                 </div>
                 <div className="review-buttons">
-                    <div className="main-btn cur" onClick={() => {navigate("/reviews")}}>
+                    <div className="main-btn cur" onClick={() => { navigate("/reviews") }}>
                         VIEW ALL REVIEWS
                     </div>
-                    <div className="main-btn cur">
+                    <div className="main-btn cur" onClick={() => { navigate("/reviews") }}>
                         POST A REVIEW
                     </div>
                 </div>

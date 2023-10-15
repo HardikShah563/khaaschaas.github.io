@@ -13,6 +13,10 @@
     box-shadow: 4px 4px 0px var(--kulhad);
 }
 
+.whatsapp-logo:hover {
+    box-shadow: 4px 4px 0px var(--yellow);
+}
+
 .campus-delivery-logo {
     width: fit-content;
     margin: auto auto;

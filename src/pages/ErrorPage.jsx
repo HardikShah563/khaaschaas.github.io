@@ -1,4 +1,8 @@
+// importing from react
+import { useNavigate } from "react-router-dom";
+
 export default function ErrorPage() {
+    const navigate = useNavigate();
     return (
         <>
             <div className="page-contents">
@@ -15,6 +19,9 @@ export default function ErrorPage() {
                         alt=""
                         className="chaas-memes"
                     />
+                    <div className="main-btn cur" onClick={() => {navigate("/")}}>
+                        Go back to home page
+                    </div>
                 </center>
             </div>
         </>

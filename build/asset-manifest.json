@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/khaaschaas/static/css/main.f80b2835.css",
+    "main.js": "/khaaschaas/static/js/main.b531d71e.js",
+    "static/media/footer-img.png": "/khaaschaas/static/media/footer-img.6d6fe4c70bccf304b7b7.png",
+    "static/media/fragile.otf": "/khaaschaas/static/media/fragile.d74d05ad81f1e42b7ff2.otf",
+    "static/media/Poppins-Thin.ttf": "/khaaschaas/static/media/Poppins-Thin.59ff6a729e30c99b478e.ttf",
+    "static/media/Poppins-Regular.ttf": "/khaaschaas/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Black.ttf": "/khaaschaas/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
+    "static/media/Stella.ttf": "/khaaschaas/static/media/Stella.ddc9b5804bea66057d30.ttf",
+    "static/media/BobbyJones.otf": "/khaaschaas/static/media/BobbyJones.fc9f4529579fd553bf72.otf",
+    "index.html": "/khaaschaas/index.html",
+    "main.f80b2835.css.map": "/khaaschaas/static/css/main.f80b2835.css.map",
+    "main.b531d71e.js.map": "/khaaschaas/static/js/main.b531d71e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f80b2835.css",
+    "static/js/main.b531d71e.js"
+  ]
+}

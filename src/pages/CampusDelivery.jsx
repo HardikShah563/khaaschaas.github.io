@@ -60,7 +60,10 @@ export default function CampusDelivery() {
 
                 <div className="how-to-order-img-parent">
                     <img 
-                        src="images/how-to-order.png" 
+                        src={
+                            process.env.PUBLIC_URL +
+                            "/images/how-to-order.png"
+                        }
                         alt="how to order image"
                         className="how-to-order-img"
                     />

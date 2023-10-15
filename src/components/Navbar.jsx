@@ -117,7 +117,10 @@ export default function Navbar() {
                                     className="nav-div-name login-icon main-btn"
                                 >
                                     <img
-                                        src="./images/whatsapp-icon.png"
+                                        src={
+                                            process.env.PUBLIC_URL +
+                                            "/images/whatsapp-icon.png"
+                                        }
                                         alt="whatsapp icon"
                                         className="what-icon"
                                     />
@@ -131,7 +134,10 @@ export default function Navbar() {
                                     className="nav-div-name login-icon main-btn"
                                 >
                                     <img
-                                        src="./images/swiggy-icon.png"
+                                        src={
+                                            process.env.PUBLIC_URL +
+                                            "/images/swiggy-icon.png"
+                                        }
                                         alt="swiggy icon"
                                         className="swig-icon"
                                     />
@@ -145,7 +151,10 @@ export default function Navbar() {
                                     className="nav-div-name login-icon main-btn"
                                 >
                                     <img
-                                        src="./images/zomato-icon.png"
+                                        src={
+                                            process.env.PUBLIC_URL +
+                                            "/images/zomato-icon.png"
+                                        }
                                         alt="zomato icon"
                                         className="zom-icon"
                                     />
@@ -159,8 +168,11 @@ export default function Navbar() {
                                     className="nav-div-name login-icon main-btn"
                                 >
                                     <img
-                                        src="./images/insta-icon.png"
-                                        alt="zomato icon"
+                                        src={
+                                            process.env.PUBLIC_URL +
+                                            "/images/insta-icon.png"
+                                        }
+                                        alt="instagram icon"
                                         className="zom-icon"
                                     />
                                 </div>
