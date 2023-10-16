@@ -1,6 +1,6 @@
 // importing from react
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 // importing stylesheet
 import "../style/navbar.css";
@@ -21,6 +21,16 @@ export default function Navbar() {
         username: "username",
         userLogo: "userLoogo",
     });
+
+    const navRef = useRef();
+
+    useEffect(() => {
+        window.addEventListener("click", (e) => {
+            if (e.target !== navRef.current) {
+                // setCollapseNavbar(false);
+            }
+        })
+    })
 
     const toggleNavbar = () => {
         setCollapseNavbar(prevState => !prevState);
@@ -78,7 +88,10 @@ export default function Navbar() {
                     <div className={collapseNavbar ? "nav-links active" : "nav-links"}>
                         <div className="dropdown">
                             <div
-                                onClick={() => { navigate("/shop") }}
+                                onClick={() => { 
+                                    navigate("/shop") 
+                                    setCollapseNavbar(false)
+                                }}
                                 className="nav-div-name main-btn"
                             >
                                 <span>Shop</span>
@@ -96,7 +109,10 @@ export default function Navbar() {
                         <div className="dropdown">
                             <div
                                 className="nav-div-name main-btn"
-                                onClick={() => { navigate("/campus-delivery#top") }}
+                                onClick={() => { 
+                                    navigate("/campus-delivery#top") 
+                                    setCollapseNavbar(false)
+                                }}
                             >
                                 Campus Delivery
                             </div>
@@ -115,6 +131,7 @@ export default function Navbar() {
                             <a target="_blank" href="https://wa.me/+918657586667">
                                 <div
                                     className="nav-div-name login-icon main-btn"
+                                    onClick={() => {setCollapseNavbar(false)}}
                                 >
                                     <img
                                         src={
@@ -132,6 +149,7 @@ export default function Navbar() {
                             <a target="_blank" href="https://www.swiggy.com/menu/731356?source=sharing">
                                 <div
                                     className="nav-div-name login-icon main-btn"
+                                    onClick={() => {setCollapseNavbar(false)}}
                                 >
                                     <img
                                         src={
@@ -149,6 +167,7 @@ export default function Navbar() {
                             <a target="_blank" href="https://link.zomato.com/xqzv/rshare?id=473331540c6b9f5a">
                                 <div
                                     className="nav-div-name login-icon main-btn"
+                                    onClick={() => {setCollapseNavbar(false)}}
                                 >
                                     <img
                                         src={

@@ -1,8 +1,7 @@
 /* ---- navigation bar css ---- */
 .nav {
-    position: fixed;
     width: 96vw;
-    left: 2vw;
+    margin: 5px auto;
     z-index: 10;
     overflow: visible;
 }
