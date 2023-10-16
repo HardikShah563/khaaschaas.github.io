@@ -7,34 +7,36 @@ import "../style/faq.css";
 import "../style/howtoorder.css";
 // importing components
 import SingleFAQ from "../components/SingleFAQ";
+// importing data
+import faq from "../config/faq";
 
 export default function CampusDelivery() {
     const navigate = useNavigate();
 
-    const faq = [
-        {
-            faqQuestion: "How amazing is khaas chaas",
-            faqSolution: "It is totally amazing",
-        }, {
-            faqQuestion: "How amazing is khaas chaas",
-            faqSolution: "It is totally amazing",
-        }, {
-            faqQuestion: "How amazing is khaas chaas",
-            faqSolution: "It is totally amazing",
-        }, {
-            faqQuestion: "How amazing is khaas chaas",
-            faqSolution: "It is totally amazing",
-        }, {
-            faqQuestion: "How amazing is khaas chaas",
-            faqSolution: "It is totally amazing",
-        }, {
-            faqQuestion: "How amazing is khaas chaas",
-            faqSolution: "It is totally amazing",
-        }, {
-            faqQuestion: "How amazing is khaas chaas",
-            faqSolution: "It is totally amazing",
-        },
-    ];
+    // const faq = [
+    //     {
+    //         faqQuestion: "How amazing is khaas chaas",
+    //         faqSolution: "It is totally amazing",
+    //     }, {
+    //         faqQuestion: "How amazing is khaas chaas",
+    //         faqSolution: "It is totally amazing",
+    //     }, {
+    //         faqQuestion: "How amazing is khaas chaas",
+    //         faqSolution: "It is totally amazing",
+    //     }, {
+    //         faqQuestion: "How amazing is khaas chaas",
+    //         faqSolution: "It is totally amazing",
+    //     }, {
+    //         faqQuestion: "How amazing is khaas chaas",
+    //         faqSolution: "It is totally amazing",
+    //     }, {
+    //         faqQuestion: "How amazing is khaas chaas",
+    //         faqSolution: "It is totally amazing",
+    //     }, {
+    //         faqQuestion: "How amazing is khaas chaas",
+    //         faqSolution: "It is totally amazing",
+    //     },
+    // ];
 
     return (
         <>

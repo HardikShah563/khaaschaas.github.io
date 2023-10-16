@@ -163,7 +163,7 @@ export default function Navbar() {
                         </div>
 
                         <div className="dropdown">
-                            <a target="_blank" href="https://instagram.com/thekhaaschaas">
+                            <a target="_blank" href="https://instagram.com/khaaschaas">
                                 <div
                                     className="nav-div-name login-icon main-btn"
                                 >
