@@ -96,7 +96,7 @@ export default function Navbar() {
                         <div className="dropdown">
                             <div
                                 className="nav-div-name main-btn"
-                                onClick={() => { navigate("/campus-delivery") }}
+                                onClick={() => { navigate("/campus-delivery#top") }}
                             >
                                 Campus Delivery
                             </div>

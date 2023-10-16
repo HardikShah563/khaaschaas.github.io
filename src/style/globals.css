@@ -99,6 +99,7 @@
     font-family: Poppins-Regular;
     transition: all 200ms ease-in-out;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .page-contents {
@@ -221,6 +222,18 @@
     align-items: center;
     background-color: var(--tertiary-dark-2);
     border-radius: var(--large-radius);
+}
+
+.top-arrow {
+    position: fixed;
+    right: 10px;
+    bottom: 0px;
+    padding: 5px 10px 0px 10px;
+    color: var(--secondary-dark);
+}
+
+.top-arrow:hover {
+    padding: 5px 10px;
 }
 
 @media (max-width: 550px) {

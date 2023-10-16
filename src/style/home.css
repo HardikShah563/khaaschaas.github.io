@@ -287,8 +287,8 @@
     }
     
     .revolution-icon {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
     }
 
     .revolution-hr {
@@ -313,7 +313,7 @@
 
     .revolution-images img {
         width: 200px;
-        margin-block: 40px;
+        margin-block: 20px;
     }
 
     .review-buttons .main-btn {
