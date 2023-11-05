@@ -69,10 +69,8 @@ export default function Footer() {
                         <a target="_blank" href="https://www.linkedin.com/company/khaas-chaas/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
 
-                    <div class="below-footer-section">
-                        <span>@2023&nbsp;</span>
-                        <span class="yellow-text">TheKhaasChaas&nbsp;</span>
-                        <span>|&nbsp;All Rights Reserved</span>
+                    <div class="below-footer-section yellow-text">
+                        <span class="yellow-text">@{new Date().getFullYear()} TheKhaasChaas&nbsp;|&nbsp;All Rights Reserved</span>
                     </div>
                 </div>
             </footer>

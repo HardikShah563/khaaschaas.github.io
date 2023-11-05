@@ -3,15 +3,21 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 // importing stylesheet
 import "../style/shop.css";
-// importing icons
-import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 // importing data
 import { shopItems } from "../config/data";
 // importing components
 import ShopItem from "../components/ShopItem";
+import ShopModal from "../components/ShopModal";
 
 export default function Shop() {
     const navigate = useNavigate();
+
+    const [showModal, setShowModal] = useState(false);
+    const [modalInfo, setModalInfo] = useState({});
+
+    function toggleShowModal() {
+        setShowModal(prevState => !prevState);
+    }
 
     return (
         <>
@@ -59,7 +65,10 @@ export default function Shop() {
 
                 <div className="shop-items">
                     {shopItems.map((el) => (
-                        <>
+                        <div onClick={() => {
+                            setShowModal(true);
+                            setModalInfo(el);
+                        }}>
                             <ShopItem
                                 drinkURL={el.drinkURL}
                                 backgroundColor={el.backgroundColor}
@@ -70,10 +79,19 @@ export default function Shop() {
                                 drinkFullName={el.drinkFullName}
                                 drinkCost={el.drinkCost}
                             />
-                        </>
+                        </div>
                     ))}
                 </div>
             </div>
+
+            {showModal && (
+                <div>
+                    <ShopModal
+                        modalInfo={modalInfo}
+                        toggleShowModal={toggleShowModal}
+                    />
+                </div>
+            )}
         </>
     );
 };
