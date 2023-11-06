@@ -90,7 +90,7 @@ export default function Home() {
 
             <div className="numbers flex">
                 <div className="numbers-div">
-                    <div className="metric big-heading">1000+</div>
+                    <div className="metric big-heading">1500+</div>
                     <div className="metric-name simple-heading">Units sold yet</div>
                 </div>
                 <div className="numbers-div">
